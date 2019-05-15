@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+  <head> 
+    <meta charset="UTF-8">
+    <title>miatly</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="page-header container">
+      <div class="menu">
+        <div class="menu__wrapper"><a class="menu__logo" href="index.html">миатли</a>
+          <div class="nav__wrapper">
+            <div class="nav__limit">
+              <nav class="nav">
+                <ul class="nav__lists">
+                  <li><a href="cinema.html">Фильмы</a></li>
+                  <li><a href="serials.html">Сериалы</a></li>
+                  <li><a href="sports.html">Спорт</a></li>
+                  <li><a href="multfilm.html">Мультфильмы</a></li>
+                  <li><a href="talkshow.html">Ток-шоу</a></li>
+                  <li><a href="tv.html">ТВ онлайн</a></li>
+                  <li><a href="today.html">Подборки</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="menu__item">
+            <div class="menu__search">
+              <input class="menu__input-search" type="search">
+            </div>
+            <input class="menu__range" type="range" value="0" min="0" max="1" oninput="range()">
+            <button class="menu__enter" type="button">Войти</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="banner">
+        <div class="wrapper">
+          <div class="banner__limit limit">
+            <div class="banner__item"><img src="img/banner-any.jpg" alt="Аннигиляция"></div>
+            <div class="banner__item"><img src="img/banner-face.jpg" alt="Юморист"></div>
+            <div class="banner__item"><img src="img/banner-mary.jpg" alt="Мэри Поппинс"></div>
+          </div>
+        </div>
+        <button class="banner__play" type="button"> <span>Смотреть</span></button>
+      </section>
+      <section class="cinema container">
+        <section class="header__block">
+          <div class="min-menu"><a href="#">Главная    </a><span></span><a href="#">Фильмы</a></div>
+          <div class="title__inside">
+            <h1>фильмы</h1>
+          </div>
+        </section>
+        <form action="index.html" method="post">
+          <div class="wrapper">
+            <div class="buttons__filtrs limit">
+              <button class="button__pro" type="button">фэнтaзи</button>
+              <button class="button__pro" type="button">зарубежные</button>
+              <button class="button__pro" type="button">2018&nbsp;год</button>
+              <button class="button__pro" type="button">советские</button>
+              <button class="button__pro" type="button">фэнтази</button>
+              <button class="button__pro" type="button">зарубежные</button>
+              <button class="button__pro" type="button">2019&nbsp;год</button>
+              <button class="button__pro" type="button">советские</button>
+              <button class="button__pro" type="button">криминальные</button>
+              <button class="button__pro" type="button">американские</button>
+              <button class="button__pro" type="button">новинки</button>
+            </div>
+          </div>
+          <button class="cinema__sort" type="button">фильтр и сортировка</button>
+          <div class="cinema__select cinema__hide">
+            <select>
+              <option>Все жанры</option>
+              <option>Ужасы</option>
+              <option>Фэнтази</option>
+              <option>Приключения</option>
+              <option>Драма</option>
+              <option>Документальное </option>
+            </select>
+            <select>
+              <option>Все годы</option>
+              <option>2019</option>
+              <option>2018</option>
+              <option>2017</option>
+              <option>2016</option>
+              <option>2015</option>
+              <option>2014</option>
+              <option>2013</option>
+            </select>
+            <select>
+              <option>Все страны</option>
+              <option>Россия</option>
+              <option>Англия</option>
+              <option>Бельгия</option>
+              <option>Япония</option>
+            </select>
+            <select>
+              <option>Сначала новые</option>
+            </select>
+            <button class="cinema__select-button">Сбросить</button>
+          </div>
+        </form>
+        <section class="cinema__lists"><a class="cinema__list" href="#"><img class="img-kub" src="img/film-1.jpg">
+            <h3 class="name">Чёрная пантера</h3>
+            <p class="category">триллер</p></a><a class="cinema__list" href="#"><img class="img-kub" src="img/film-2.jpg">
+            <h3 class="name">Hollywood Portfolio</h3>
+            <p class="category">комедия, мелодрама</p></a><a class="cinema__list" href="#"><img class="img-kub" src="img/film-3.jpg">
+            <h3 class="name">Голодные игры</h3>
+            <p class="category">фэнтази, драма</p></a><a class="cinema__list" href="#"><img class="img-kub" src="img/film-4.jpg">
+            <h3 class="name">Лига справедливос..</h3>
+            <p class="category">документальный филмьм</p></a><a class="cinema__list" href="#"><img class="img-kub" src="img/film-5.jpg">
+            <h3 class="name">Зои</h3>
+            <p class="category">документальный филмьм</p></a><a class="cinema__list" href="#"><img class="img-kub" src="img/film-6.jpg">
+            <h3 class="name">Гоголь Вий</h3>
+            <p class="category">документальный филмьм</p></a></section>
+        <section class="cinema__lists"><a class="cinema__list" href="#"><img class="img-kub" src="img/film-7.jpg">
+            <h3 class="name">Безумный Макс</h3>
+            <p class="category">фэнтази, драма</p></a><a class="cinema__list" href="#"><img class="img-kub" src="img/film-1.jpg">
+            <h3 class="name">Чёрная пантера</h3>
+            <p class="category">триллер</p></a><a class="cinema__list" href="#"><img class="img-kub" src="img/film-2.jpg">
+            <h3 class="name">Hollywood Portfolio</h3>
+            <p class="category">комедия, мелодрама</p></a><a class="cinema__list" href="#"><img class="img-kub" src="img/film-3.jpg">
+            <h3 class="name">Голодные игры</h3>
+            <p class="category">фэнтази, драма</p></a><a class="cinema__list" href="#"><img class="img-kub" src="img/film-4.jpg">
+            <h3 class="name">Лига справедливос..</h3>
+            <p class="category">документальный филмьм</p></a><a class="cinema__list" href="#"><img class="img-kub" src="img/film-5.jpg">
+            <h3 class="name">Зои</h3>
+            <p class="category">документальный филмьм</p></a></section>
+        <section class="cinema__lists">
+          <div class="cinema__list1"><img class="img-finish" src="img/half-1.jpg"></div>
+          <div class="cinema__list1"><img class="img-finish" src="img/half-2.jpg"></div>
+          <div class="cinema__list1"><img class="img-finish" src="img/half-3.jpg"></div>
+          <div class="cinema__list1"><img class="img-finish" src="img/half-4.jpg"></div>
+          <div class="cinema__list1"><img class="img-finish" src="img/half-5.jpg"></div>
+          <div class="cinema__list1"><img class="img-finish" src="img/half-6.jpg"></div>
+        </section>
+      </section>
+    </main>
+    <div class="footer__line">
+      <footer class="footer container">
+        <ul class="footer__menu">
+          <li><a href="#">О нас          </a></li>
+          <li><a href="#">Партнёрам</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="footer__social">
+          <li><a href="#"> <img src="img/odnoklassniki.svg"><span class="visually-hidden">Одноклассники          </span></a></li>
+          <li><a href="#"><img src="img/vk.svg"><span class="visually-hidden">вконтакте</span></a></li>
+          <li><a href="#"><img src="img/facebook.svg"><span class="visually-hidden">фейсбук</span></a></li>
+        </ul>
+      </footer>
+    </div>
+    <script type="text/javascript" src="js/jquery.min-3.4.1.js"></script>
+    <script type="text/javascript" src="js/jquery.min-migrate-1.4.1.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

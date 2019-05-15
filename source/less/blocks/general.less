@@ -1,0 +1,287 @@
+.title {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.bg {
+  background-color: #f1f1f1;
+}
+
+.title__name {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(153, 153, 153);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 69px;
+  margin-bottom: 56px;
+}
+
+
+.slider__lists,
+.circle__lists,
+.kub__lists {
+  display: flex;
+  margin-left: 20px;
+  padding-bottom: 89px;
+}
+
+.kub__lists {
+  padding-bottom: 137px;
+}
+
+
+.wrapper {
+  overflow: hidden;
+}
+
+.limit {
+  display: flex;
+  min-width: 320px;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 20px;
+  margin-bottom: -20px;
+}
+
+.name {
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 0;
+  // min-height: 28px;
+}
+
+.name:hover,
+.name:focus {
+  cursor: pointer;
+  color: #1e46db;
+}
+
+.category {
+  font-size: 11px;
+  font-weight: normal;
+  color: rgb(102, 102, 102);
+  line-height: 1.2;
+  text-align: center;
+  margin: 0;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  // min-height: 26px;
+}
+
+.mark {
+  font-size: 11px;
+  color: rgb(255, 254, 254);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 2px;
+  background-color: rgb(238, 49, 56);
+  width: 31px;
+  // min-height: 17px;
+}
+
+.img {
+  width: 70px;
+  height: 70px;
+  padding: 0 10px;
+  position: relative;
+}
+
+.underline {
+  border: 2px solid red;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.all__link {
+  display: block;
+  position: absolute;
+  bottom: -560px;
+  right: 50%;
+  transform: translateX(50%);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: rgb(153, 153, 153);
+}
+
+.bottom__link {
+  bottom: -530px;
+}
+
+.select__link {
+  bottom: -310px;
+}
+
+.img-kub {
+  width: 130px;
+  height: 192px;
+}
+
+.img__big,
+.img__min {
+  background-color: rgb(242, 242, 242);
+  width: 207px;
+  height: 140px;
+  margin-bottom: 20px;
+}
+
+.img__select {
+  background-color: rgb(209, 209, 209);
+  width: 207px;
+  height: 192px;
+}
+
+.text {
+  display: none;
+  font-size: 14px;
+  font-weight: normal;
+  color: rgb(0, 0, 0);
+  line-height: 1.571;
+  text-align: left;
+}
+
+.info {
+  font-size: 12px;
+  font-weight: normal;
+  color: rgb(102, 102, 102);
+  line-height: 1.2;
+  text-align: left;
+  display: flex;
+}
+
+.info::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 16px;
+  background: url("../img/flag.png") no-repeat;
+  margin-right: 10px;
+}
+
+.slider__list {
+  text-align: left;
+}
+.circle__list,
+.kub__list {
+  text-align: center;
+}
+
+
+.header__block {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.img-finish {
+  width: 130px;
+  height: 134px;
+}
+
+@media (min-width: 360px) {
+  .img-finish {
+    width: 150px;
+  }
+}
+@media (min-width: @size-tablet) {
+  .title__name {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+  }
+
+  .header__block {
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .all__link {
+    top: 74px;
+    right: 200px;
+  }
+
+
+  .name {
+    font-size: 16px;
+  }
+
+  .kub__list {
+    width: 170px;
+  }
+
+  .circle__list {
+    width: 100px;
+  }
+
+  .img {
+    width: 100px;
+    height: 100px;
+    // margin: 0 28px;
+  }
+
+  .category {
+    font-size: 12px;
+  }
+  .slider__lists,
+  .programms__lists,
+  .programm__lists,
+  .kub__lists,
+  .circle__lists {
+    margin-left: 0;
+  }
+}
+@media (min-width: @size-desktop) {
+  .text {
+    display: block;
+  }
+  .underline {
+    width: 110px;
+    height: 110px;
+  }
+  .img {
+    width: 100px;
+    height: 100px;
+    margin: 0 28px;
+  }
+
+  .img-kub {
+    width: 170px;
+    height: 259px;
+  }
+
+  .img__big {
+    width: 570px;
+    height: 400px;
+  }
+
+  .img__min {
+    width: 270px;
+    height: 190px;
+  }
+
+  .img__select {
+    width: 270px;
+    height: 250px;
+  }
+
+  .img-finish {
+    width: 170px;
+    height: 168px;
+  }
+}

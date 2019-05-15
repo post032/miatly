@@ -1,0 +1,112 @@
+body {
+  padding: 0;
+  margin: 0 auto;
+  min-width: 320px;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #000000;
+  font-style: normal;
+  background-color: @basic-color;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.container {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+@media (min-width: @size-tablet) {
+  .container {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+  }
+}
+@media (min-width: @size-desktop) {
+  .container {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1170px;
+    position: relative;
+  }
+}
+
+.slick-next {
+  right: 0;
+z-index: -1;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotolight.woff2") format("woff2"), url("../fonts/robotolight.woff") format("woff");
+  font-style: normal;
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotobold.woff2") format("woff2"), url("../fonts/robotobold.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotomedium.woff2") format("woff2"), url("../fonts/robotomedium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotoblack.woff2") format("woff2"), url("../fonts/robotoblack.woff") format("woff");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/ralewayblack.woff2") format("woff2"), url("../fonts/ralewayblack.woff") format("woff");
+  font-style: normal;
+  font-weight: 900;
+}

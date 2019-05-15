@@ -1,0 +1,35 @@
+doctype html
+html(lang="ru-Ru")
+  head 
+    meta(charset="UTF-8")
+    title miatly
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/slick.css")
+    link(rel="stylesheet", href="css/slick-theme.css")
+    link(rel="stylesheet", href="css/style.min.css")
+    
+
+  body
+    header.page-header.container
+      include ../sections/header
+    main
+      include ../sections/banner
+      include ../sections/popular
+      section.bg
+        include ../sections/films
+      include ../sections/serial
+      section.bg
+        include ../sections/mult
+      include ../sections/about-us
+      section.bg
+        include ../sections/sport
+      include ../sections/show
+      section.bg
+        include ../sections/selections
+      include ../sections/programms
+    div.footer__line
+      include ../sections/footer
+    script(type="text/javascript" src="js/jquery.min-3.4.1.js")
+    script(type="text/javascript" src="js/jquery.min-migrate-1.4.1.js")
+    script(type="text/javascript" src="js/slick.min.js")
+    script(type="text/javascript" src="js/script.js")

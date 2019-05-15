@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+  <head> 
+    <meta charset="UTF-8">
+    <title>miatly</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="page-header container">
+      <div class="menu">
+        <div class="menu__wrapper"><a class="menu__logo" href="index.html">миатли</a>
+          <div class="nav__wrapper">
+            <div class="nav__limit">
+              <nav class="nav">
+                <ul class="nav__lists">
+                  <li><a href="cinema.html">Фильмы</a></li>
+                  <li><a href="serials.html">Сериалы</a></li>
+                  <li><a href="sports.html">Спорт</a></li>
+                  <li><a href="multfilm.html">Мультфильмы</a></li>
+                  <li><a href="talkshow.html">Ток-шоу</a></li>
+                  <li><a href="tv.html">ТВ онлайн</a></li>
+                  <li><a href="today.html">Подборки</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="menu__item">
+            <div class="menu__search">
+              <input class="menu__input-search" type="search">
+            </div>
+            <input class="menu__range" type="range" value="0" min="0" max="1" oninput="range()">
+            <button class="menu__enter" type="button">Войти</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="banner">
+        <div class="wrapper">
+          <div class="banner__limit limit">
+            <div class="banner__item"><img src="img/banner-any.jpg" alt="Аннигиляция"></div>
+            <div class="banner__item"><img src="img/banner-face.jpg" alt="Юморист"></div>
+            <div class="banner__item"><img src="img/banner-mary.jpg" alt="Мэри Поппинс"></div>
+          </div>
+        </div>
+        <button class="banner__play" type="button"> <span>Смотреть</span></button>
+      </section>
+      <section class="popular">
+        <div class="title">
+          <h2 class="title__name">популярное в эфире</h2>
+        </div>
+        <section class="circle__lists"><a class="circle__list" href="#">
+            <div class="underline"><img class="img" src="img/pop-3.png"></div>
+            <h3 class="name">Потерянное зерно</h3>
+            <p class="category">приключения</p><span class="mark">live</span></a><a class="circle__list" href="#">
+            <div class="underline"> <img class="img" src="img/pop-1.png"></div>
+            <h3 class="name">Юморист</h3>
+            <p class="category">Фильм</p><span class="mark">live</span></a><a class="circle__list" href="#">
+            <div class="underline"><img class="img" src="img/pop-2.png"></div>
+            <h3 class="name">Книга джунглей</h3>
+            <p class="category">Мультфильм</p><span class="mark">live</span></a><a class="circle__list" href="#">
+            <div class="underline"><img class="img" src="img/pop-3.png"></div>
+            <h3 class="name">Потерянное зерно</h3>
+            <p class="category">приключения</p><span class="mark">live</span></a><a class="circle__list" href="#">
+            <div class="underline"><img class="img" src="img/pop-4.png"></div>
+            <h3 class="name">Битва за Севасто...</h3>
+            <p class="category">исторический боевик</p><span class="mark">live</span></a><a class="circle__list" href="#">
+            <div class="underline"><img class="img" src="img/pop-5.png"></div>
+            <h3 class="name">Золушка</h3>
+            <p class="category">сказка</p><span class="mark">live</span></a><a class="circle__list" href="#">
+            <div class="underline"><img class="img" src="img/pop-6.png"></div>
+            <h3 class="name">Лермонтов</h3>
+            <p class="category">документальный фильм</p><span class="mark">live</span></a><a class="circle__list" href="#">
+            <div class="underline"><img class="img" src="img/pop-3.png"></div>
+            <h3 class="name">Потерянное зерно</h3>
+            <p class="category">приключения</p><span class="mark">live</span></a></section>
+      </section>
+      <section class="bg">
+        <section class="films">
+          <div class="title">
+            <h2 class="title__name">фильмы</h2><a class="all__link film__link" href="#">Все фильмы</a>
+          </div>
+          <section class="circle__lists"><a class="circle__list" href="#">
+              <div class="underline"><img class="img" src="img/pop-3.png"></div>
+              <h3 class="name">Потерянное зерно</h3>
+              <p class="category">приключения</p><span class="mark">live</span></a><a class="circle__list" href="#">
+              <div class="underline"><img class="img" src="img/pop-1.png"></div>
+              <h3 class="name">Юморист</h3>
+              <p class="category">Фильм</p><span class="mark">live</span></a><a class="circle__list" href="#">
+              <div class="underline"><img class="img" src="img/pop-2.png"></div>
+              <h3 class="name">Книга джунглей</h3>
+              <p class="category">Мультфильм</p><span class="mark">live</span></a><a class="circle__list" href="#">
+              <div class="underline"><img class="img" src="img/pop-3.png"></div>
+              <h3 class="name">Потерянное зерно</h3>
+              <p class="category">приключения</p><span class="mark">live</span></a><a class="circle__list" href="#">
+              <div class="underline"><img class="img" src="img/pop-4.png"></div>
+              <h3 class="name">Битва за Севасто...</h3>
+              <p class="category">исторический боевик</p><span class="mark">live</span></a><a class="circle__list" href="#">
+              <div class="underline"><img class="img" src="img/pop-5.png"></div>
+              <h3 class="name">Золушка</h3>
+              <p class="category">сказка</p><span class="mark">live</span></a><a class="circle__list" href="#">
+              <div class="underline"><img class="img" src="img/pop-6.png"></div>
+              <h3 class="name">Лермонтов</h3>
+              <p class="category">документальный фильм</p><span class="mark">live</span></a><a class="circle__list" href="#">
+              <div class="underline"><img class="img" src="img/pop-3.png"></div>
+              <h3 class="name">Потерянное зерно</h3>
+              <p class="category">приключения</p><span class="mark">live</span></a></section>
+          <section class="kub__lists"><a class="kub__list" href="#"><img class="img-kub" src="img/film-1.jpg">
+              <h3 class="name">Чёрная пантера</h3>
+              <p class="category">триллер</p></a><a class="kub__list" href="#"><img class="img-kub" src="img/film-2.jpg">
+              <h3 class="name">Hollywood Portfolio</h3>
+              <p class="category">комедия, мелодрама</p></a><a class="kub__list" href="#"><img class="img-kub" src="img/film-3.jpg">
+              <h3 class="name">Голодные игры</h3>
+              <p class="category">фэнтази, драма</p></a><a class="kub__list" href="#"><img class="img-kub" src="img/film-4.jpg">
+              <h3 class="name">Лига справедливос..</h3>
+              <p class="category">документальный филмьм</p></a><a class="kub__list" href="#"><img class="img-kub" src="img/film-5.jpg">
+              <h3 class="name">Зои</h3>
+              <p class="category">документальный филмьм</p></a><a class="kub__list" href="#"><img class="img-kub" src="img/film-6.jpg">
+              <h3 class="name">Гоголь Вий</h3>
+              <p class="category">документальный филмьм</p></a><a class="kub__list" href="#"><img class="img-kub" src="img/film-7.jpg">
+              <h3 class="name">Безумный Макс</h3>
+              <p class="category">фэнтази, драма</p></a></section>
+        </section>
+      </section>
+      <section class="serial">
+        <div class="title">
+          <h2 class="title__name">СЕРИАЛЫ</h2><a class="all__link serial__link" href="#">Все сериалы</a>
+        </div>
+        <section class="circle__lists"><a class="circle__list" href="#">
+            <div class="underline"><img class="img" src="img/pop-3.png"></div>
+            <h3 class="name">Потерянное зерно</h3>
+            <p class="category">приключения</p><span class="mark">live</span></a><a class="circle__list" href="#">
+            <div class="underline"><img class="img" src="img/pop-1.png"></div>
+            <h3 class="name">Юморист</h3>
+            <p class="category">Фильм</p><span class="mark">live</span></a><a class="circle__list" href="#">
+            <div class="underline"><img class="img" src="img/pop-2.png"></div>
+            <h3 class="name">Книга джунглей</h3>
+            <p class="category">Мультфильм</p><span class="mark">live</span></a><a class="circle__list" href="#">
+            <div class="underline"><img class="img" src="img/pop-3.png"></div>
+            <h3 class="name">Потерянное зерно</h3>
+            <p class="category">приключения</p><span class="mark">live</span></a><a class="circle__list" href="#">
+            <div class="underline"><img class="img" src="img/pop-4.png"></div>
+            <h3 class="name">Битва за Севасто...</h3>
+            <p class="category">исторический боевик</p><span class="mark">live</span></a><a class="circle__list" href="#">
+            <div class="underline"><img class="img" src="img/pop-5.png"></div>
+            <h3 class="name">Золушка</h3>
+            <p class="category">сказка</p><span class="mark">live</span></a><a class="circle__list" href="#">
+            <div class="underline"><img class="img" src="img/pop-6.png"></div>
+            <h3 class="name">Лермонтов</h3>
+            <p class="category">документальный фильм</p><span class="mark">live</span></a><a class="circle__list" href="#">
+            <div class="underline"><img class="img" src="img/pop-3.png"></div>
+            <h3 class="name">Потерянное зерно</h3>
+            <p class="category">приключения</p><span class="mark">live</span></a></section>
+        <section class="kub__lists"><a class="kub__list" href="#"><img class="img-kub" src="img/film-1.jpg">
+            <h3 class="name">Чёрная пантера</h3>
+            <p class="category">триллер</p></a><a class="kub__list" href="#"><img class="img-kub" src="img/film-2.jpg">
+            <h3 class="name">Hollywood Portfolio</h3>
+            <p class="category">комедия, мелодрама</p></a><a class="kub__list" href="#"><img class="img-kub" src="img/film-3.jpg">
+            <h3 class="name">Голодные игры</h3>
+            <p class="category">фэнтази, драма</p></a><a class="kub__list" href="#"><img class="img-kub" src="img/film-4.jpg">
+            <h3 class="name">Лига справедливос..</h3>
+            <p class="category">документальный филмьм</p></a><a class="kub__list" href="#"><img class="img-kub" src="img/film-5.jpg">
+            <h3 class="name">Зои</h3>
+            <p class="category">документальный филмьм</p></a><a class="kub__list" href="#"><img class="img-kub" src="img/film-6.jpg">
+            <h3 class="name">Гоголь Вий</h3>
+            <p class="category">документальный филмьм</p></a><a class="kub__list" href="#"><img class="img-kub" src="img/film-7.jpg">
+            <h3 class="name">Безумный Макс</h3>
+            <p class="category">фэнтази, драма</p></a></section>
+      </section>
+      <section class="bg">
+        <section class="films">
+          <div class="title">
+            <h2 class="title__name">МУЛЬТфильмы</h2><a class="all__link mult__link" href="#">Все мультфильмы</a>
+          </div>
+          <section class="circle__lists"><a class="circle__list" href="#">
+              <div class="underline"><img class="img" src="img/pop-3.png"></div>
+              <h3 class="name">Потерянное зерно</h3>
+              <p class="category">приключения</p><span class="mark">live</span></a><a class="circle__list" href="#">
+              <div class="underline"><img class="img" src="img/pop-1.png"></div>
+              <h3 class="name">Юморист</h3>
+              <p class="category">Фильм</p><span class="mark">live</span></a><a class="circle__list" href="#">
+              <div class="underline"><img class="img" src="img/pop-2.png"></div>
+              <h3 class="name">Книга джунглей</h3>
+              <p class="category">Мультфильм</p><span class="mark">live</span></a><a class="circle__list" href="#">
+              <div class="underline"><img class="img" src="img/pop-3.png"></div>
+              <h3 class="name">Потерянное зерно</h3>
+              <p class="category">приключения</p><span class="mark">live</span></a><a class="circle__list" href="#">
+              <div class="underline"><img class="img" src="img/pop-4.png"></div>
+              <h3 class="name">Битва за Севасто...</h3>
+              <p class="category">исторический боевик</p><span class="mark">live</span></a><a class="circle__list" href="#">
+              <div class="underline"><img class="img" src="img/pop-5.png"></div>
+              <h3 class="name">Золушка</h3>
+              <p class="category">сказка</p><span class="mark">live</span></a><a class="circle__list" href="#">
+              <div class="underline"><img class="img" src="img/pop-6.png"></div>
+              <h3 class="name">Лермонтов</h3>
+              <p class="category">документальный фильм</p><span class="mark">live</span></a><a class="circle__list" href="#">
+              <div class="underline"><img class="img" src="img/pop-3.png"></div>
+              <h3 class="name">Потерянное зерно</h3>
+              <p class="category">приключения</p><span class="mark">live</span></a></section>
+          <section class="kub__lists"><a class="kub__list" href="#"><img class="img-kub" src="img/film-1.jpg">
+              <h3 class="name">Чёрная пантера</h3>
+              <p class="category">триллер</p></a><a class="kub__list" href="#"><img class="img-kub" src="img/film-2.jpg">
+              <h3 class="name">Hollywood Portfolio</h3>
+              <p class="category">комедия, мелодрама</p></a><a class="kub__list" href="#"><img class="img-kub" src="img/film-3.jpg">
+              <h3 class="name">Голодные игры</h3>
+              <p class="category">фэнтази, драма</p></a><a class="kub__list" href="#"><img class="img-kub" src="img/film-4.jpg">
+              <h3 class="name">Лига справедливос..</h3>
+              <p class="category">документальный филмьм</p></a><a class="kub__list" href="#"><img class="img-kub" src="img/film-5.jpg">
+              <h3 class="name">Зои</h3>
+              <p class="category">документальный филмьм</p></a><a class="kub__list" href="#"><img class="img-kub" src="img/film-6.jpg">
+              <h3 class="name">Гоголь Вий</h3>
+              <p class="category">документальный филмьм</p></a><a class="kub__list" href="#"><img class="img-kub" src="img/film-7.jpg">
+              <h3 class="name">Безумный Макс</h3>
+              <p class="category">фэнтази, драма</p></a></section>
+        </section>
+      </section>
+      <section class="about-us container">
+        <h2 class="about-us__title">Сaйт миатли</h2>
+        <p class="about-us__text">Гравитационный парадокс неоднозначен. Как было показано выше, авторитаризм однозначно формирует сюжетный коммунизм. Идеи гедонизма занимают центральное место в утилитаризме Милля и Бентама, однако интерпретация диссонирует трансцендентальный референдум. Принцип восприятия начинает естественный метр. Художественный идеал подчеркивает англо-американский тип политической культуры. Творческая доминанта, следовательно, выстраивает композиционный анализ.</p>
+        <p class="about-us__text">Фантазия просветляет дедуктивный метод. Политические учения Гоббса представляет собой субъективный элемент политического процесса. Субъективное восприятие начинает трансцендентальный амфибрахий. Понятие тоталитаризма, так или иначе, отражает холодный цинизм.</p>
+        <p class="about-us__text">По своим философским взглядам Дезами был материалистом и атеистом, последователем Гельвеция, однако беллетристика традиционно создает базовый тип личности. Аподейктика, как справедливо считает И.Гальперин, дает диахронический подход. Дактиль аннигилирует конструктивный знак.</p>
+      </section>
+      <section class="bg">
+        <section class="sport">
+          <div class="title">
+            <h2 class="title__name">СПОРТ</h2><a class="all__link bottom__link" href="#">Перейти в раздел</a>
+          </div>
+          <section class="circle__lists"><a class="circle__list" href="#">
+              <div class="underline"><img class="img" src="img/pop-3.png"></div>
+              <h3 class="name">Потерянное зерно</h3>
+              <p class="category">приключения</p><span class="mark">live</span></a><a class="circle__list" href="#">
+              <div class="underline"><img class="img" src="img/pop-1.png"></div>
+              <h3 class="name">Юморист</h3>
+              <p class="category">Фильм</p><span class="mark">live</span></a><a class="circle__list" href="#">
+              <div class="underline"><img class="img" src="img/pop-2.png"></div>
+              <h3 class="name">Книга джунглей</h3>
+              <p class="category">Мультфильм</p><span class="mark">live</span></a><a class="circle__list" href="#">
+              <div class="underline"><img class="img" src="img/pop-3.png"></div>
+              <h3 class="name">Потерянное зерно</h3>
+              <p class="category">приключения</p><span class="mark">live</span></a><a class="circle__list" href="#">
+              <div class="underline"><img class="img" src="img/pop-4.png"></div>
+              <h3 class="name">Битва за Севасто...</h3>
+              <p class="category">исторический боевик</p><span class="mark">live</span></a><a class="circle__list" href="#">
+              <div class="underline"><img class="img" src="img/pop-5.png"></div>
+              <h3 class="name">Золушка</h3>
+              <p class="category">сказка</p><span class="mark">live</span></a><a class="circle__list" href="#">
+              <div class="underline"><img class="img" src="img/pop-6.png"></div>
+              <h3 class="name">Лермонтов</h3>
+              <p class="category">документальный фильм</p><span class="mark">live</span></a><a class="circle__list" href="#">
+              <div class="underline"><img class="img" src="img/pop-3.png"></div>
+              <h3 class="name">Потерянное зерно</h3>
+              <p class="category">приключения</p><span class="mark">live</span></a></section>
+          <div class="wrapper container">
+            <section class="sport__blocks limit">
+              <div class="sport__block">
+                <div class="sport__new"><img class="img__big" src="img/new-1.jpg"><a class="name" href="#">Чемпионал Европы по футболу 2019</a>
+                  <p class="category">футбол</p>
+                  <p class="text">Гравитационный парадокс неоднозначен. Как было показано выше, авторитаризм однозначно формирует сюжетный коммунизм. Идеи гедонизма занимают центральное место в утилитаризме Милля и Бентама, однако интерпретация диссонирует трансцендентальный референдум.</p>
+                </div>
+              </div>
+              <div class="sport__block">
+                <div class="sport__element"><img class="img__min" src="img/new-2.jpg"><a class="name" href="#">Чемпионал Европы по водному поло среди женщин 2019</a>
+                  <p class="category">водное поло</p>
+                </div>
+                <div class="sport__element"><img class="img__min" src="img/new-3.jpg"><a class="name" href="#">Лига чемпионов 2019</a>
+                  <p class="category">футбол</p>
+                </div>
+                <div class="sport__element"><img class="img__min" src="img/new-4.jpg"><a class="name" href="#">Зимние Олимпийские игры</a>
+                  <p class="category">футбол</p>
+                </div>
+                <div class="sport__element"><img class="img__min" src="img/new-5.jpg"><a class="name" href="#">Чемпионал Европы по водному поло среди женщин 2019</a>
+                  <p class="category">футбол</p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+      </section>
+      <section class="show container">
+        <div class="title">
+          <h2 class="title__name">ток-шоу</h2><a class="all__link bottom__link" href="#">Перейти в раздел</a>
+        </div>
+        <div class="wrapper">
+          <section class="sport__blocks limit">
+            <div class="sport__block">
+              <div class="sport__new"><img class="img__big" src="img/new-1.jpg"><a class="name" href="#">Чемпионал Европы по футболу 2019</a>
+                <p class="category">футбол</p>
+                <p class="text">Гравитационный парадокс неоднозначен. Как было показано выше, авторитаризм однозначно формирует сюжетный коммунизм. Идеи гедонизма занимают центральное место в утилитаризме Милля и Бентама, однако интерпретация диссонирует трансцендентальный референдум.</p>
+              </div>
+            </div>
+            <div class="sport__block">
+              <div class="sport__element"><img class="img__min" src="img/new-2.jpg"><a class="name" href="#">Чемпионал Европы по водному поло среди женщин 2019</a>
+                <p class="category">водное поло</p>
+              </div>
+              <div class="sport__element"><img class="img__min" src="img/new-3.jpg"><a class="name" href="#">Лига чемпионов 2019</a>
+                <p class="category">футбол</p>
+              </div>
+              <div class="sport__element"><img class="img__min" src="img/new-4.jpg"><a class="name" href="#">Зимние Олимпийские игры</a>
+                <p class="category">футбол</p>
+              </div>
+              <div class="sport__element"><img class="img__min" src="img/new-5.jpg"><a class="name" href="#">Чемпионал Европы по водному поло среди женщин 2019</a>
+                <p class="category">футбол</p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="wrapper">
+          <section class="sport__blocks limit show__blocks-rotate">
+            <div class="sport__block">
+              <div class="sport__new"><img class="img__big" src="img/new-1.jpg"><a class="name" href="#">Чемпионал Европы по футболу 2019</a>
+                <p class="category">футбол</p>
+                <p class="text">Гравитационный парадокс неоднозначен. Как было показано выше, авторитаризм однозначно формирует сюжетный коммунизм. Идеи гедонизма занимают центральное место в утилитаризме Милля и Бентама, однако интерпретация диссонирует трансцендентальный референдум.</p>
+              </div>
+            </div>
+            <div class="sport__block">
+              <div class="sport__element"><img class="img__min" src="img/new-2.jpg"><a class="name" href="#">Чемпионал Европы по водному поло среди женщин 2019</a>
+                <p class="category">водное поло</p>
+              </div>
+              <div class="sport__element"><img class="img__min" src="img/new-3.jpg"><a class="name" href="#">Лига чемпионов 2019</a>
+                <p class="category">футбол</p>
+              </div>
+              <div class="sport__element"><img class="img__min" src="img/new-4.jpg"><a class="name" href="#">Зимние Олимпийские игры</a>
+                <p class="category">футбол</p>
+              </div>
+              <div class="sport__element"><img class="img__min" src="img/new-5.jpg"><a class="name" href="#">Чемпионал Европы по водному поло среди женщин 2019</a>
+                <p class="category">футбол</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="bg">
+        <section class="selections">
+          <div class="title">
+            <h2 class="title__name">ПОДБОРКИ</h2><a class="all__link select__link" href="#">Перейти в раздел</a>
+          </div>
+          <div class="slider__lists"><a class="slider__list" href="#"><img class="img__select" src="img/select-1.jpg">
+              <h3 class="name">Новогодние фильмы</h3>
+              <p class="category">футбол</p><span class="info">120</span></a><a class="slider__list" href="#"><img class="img__select" src="img/select-1.jpg">
+              <h3 class="name">Лучшие комедии 2018</h3>
+              <p class="category">Фильм</p><span class="info">1 726</span></a><a class="slider__list" href="#"><img class="img__select" src="img/select-2.jpg">
+              <h3 class="name">Фильмы про домашних живот...</h3>
+              <p class="category">Мультфильм</p><span class="info">538</span></a><a class="slider__list" href="#"><img class="img__select" src="img/select-4.jpg">
+              <h3 class="name">Фильмы с боями</h3>
+              <p class="category">приключения</p><span class="info">1 044</span></a><a class="slider__list" href="#"><img class="img__select" src="img/select-4.jpg">
+              <h3 class="name">Новогодние фильмы</h3>
+              <p class="category">исторический боевик</p><span class="info">1 044</span></a></div>
+        </section>
+      </section>
+      <section class="programms container">
+        <div class="title">
+          <h2 class="title__name">ПРОГРАММА ПЕРЕДАЧ</h2>
+        </div>
+        <div class="wrapper"> 
+          <section class="programms__lists limit">
+            <div class="programms__list">
+              <button class="button__pro button__pro--active" type="button">Все</button>
+            </div>
+            <div class="programms__list">
+              <button class="button__pro" type="button">Первый</button>
+            </div>
+            <div class="programms__list">
+              <button class="button__pro" type="button">НТВ</button>
+            </div>
+            <div class="programms__list">
+              <button class="button__pro" type="button">Дождь</button>
+            </div>
+            <div class="programms__list">
+              <button class="button__pro" type="button">Муз ТВ</button>
+            </div>
+            <div class="programms__list">
+              <button class="button__pro" type="button">Культура</button>
+            </div>
+            <div class="programms__list">
+              <button class="button__pro" type="button">Все</button>
+            </div>
+            <div class="programms__list">
+              <button class="button__pro" type="button">Все</button>
+            </div>
+            <div class="programms__list">
+              <button class="button__pro" type="button">Все</button>
+            </div>
+          </section>
+        </div>
+        <div class="programm__lists">
+          <div class="programm__list">
+            <p>18:00 <span>Новости</span> Рен ТВ </p>
+            <p>19:30 <span>КВН. Высшая лига 2019</span> Первый</p>
+            <p>18:34 <span>Пусть говорят</span> Первый</p>
+            <p>18:00 <span>Новости</span> Рен ТВ </p>
+            <p>19:30 <span>КВН. Высшая лига 2019</span> Первый</p>
+            <p>18:34 <span>Пусть говорят</span> Первый</p>
+          </div>
+          <div class="programm__list">
+            <p>19:30 <span>КВН. Высшая лига 2019</span> Первый</p>
+            <p>19:30 <span>Документальный ф...</span> Культура </p>
+            <p>18:00 <span>Новости</span> Рен ТВ </p>
+            <p>19:30 <span>КВН. Высшая лига 2019</span> Первый</p>
+            <p>19:30 <span>Документальный ф...</span> Культура</p>
+            <p>18:00 <span>Новости</span> Рен ТВ </p>
+          </div>
+          <div class="programm__list">
+            <p>19:00 <span>Жизнь на Марсе</span> Рен ТВ  </p>
+            <p>18:00 <span>Новости</span> Рен ТВ </p>
+            <p>19:30 <span>КВН. Высшая лига 2019</span> Первый </p>
+            <p>19:00 <span>Жизнь на Марсе</span> Рен ТВ </p>
+            <p>18:00 <span>Новости</span> Рен ТВ </p>
+            <p>19:30 <span>КВН. Высшая лига 2019</span> Первый</p>
+          </div>
+          <div class="programm__list">
+            <p>19:30 <span>КВН. Высшая лига 2019</span> Первый</p>
+            <p>19:30 <span>КВН. Высшая лига 2019</span> Первый </p>
+            <p>19:30 <span>КВН. Высшая лига 2019</span> Первый </p>
+            <p>19:30 <span>КВН. Высшая лига 2019</span> Первый</p>
+            <p>19:30 <span>КВН. Высшая лига 2019</span> Первый</p>
+            <p>19:30 <span>КВН. Высшая лига 2019</span> Первый</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="footer__line">
+      <footer class="footer container">
+        <ul class="footer__menu">
+          <li><a href="#">О нас          </a></li>
+          <li><a href="#">Партнёрам</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="footer__social">
+          <li><a href="#"> <img src="img/odnoklassniki.svg"><span class="visually-hidden">Одноклассники          </span></a></li>
+          <li><a href="#"><img src="img/vk.svg"><span class="visually-hidden">вконтакте</span></a></li>
+          <li><a href="#"><img src="img/facebook.svg"><span class="visually-hidden">фейсбук</span></a></li>
+        </ul>
+      </footer>
+    </div>
+    <script type="text/javascript" src="js/jquery.min-3.4.1.js"></script>
+    <script type="text/javascript" src="js/jquery.min-migrate-1.4.1.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

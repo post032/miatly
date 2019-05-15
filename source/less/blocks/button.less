@@ -1,0 +1,43 @@
+.buttons__filtrs {
+  display: flex;
+  margin-left: 20px;
+  padding-bottom: 52px;
+}
+
+.buttons__filtrs button {
+  margin-right: 10px;
+  margin-bottom: 19px;
+}
+
+.button__pro {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(65, 67, 139);
+  line-height: 1.2;
+  text-align: center;
+  background-color: rgb(239, 239, 255);
+  min-width: 120px;
+  min-height: 40px;
+  border: none;
+  border-radius: 20px;
+}
+
+.button__pro--active {
+  color: rgb(255, 255, 255);
+  background-color: rgb(64, 67, 206);
+}
+
+@media (min-width: @size-tablet) {
+  .button__pro {
+    min-width: 170px;
+  }
+
+  .buttons__filtrs {
+    margin-left: 0;
+  }
+}
+@media (min-width: @size-desktop) {
+  .buttons__filtrs {
+    flex-wrap: wrap;
+  }
+}
