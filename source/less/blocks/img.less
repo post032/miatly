@@ -1,0 +1,93 @@
+.img {
+  width: 70px;
+  height: 70px;
+  padding: 0 10px;
+  position: relative;
+}
+
+.img-kub {
+  width: 130px;
+  height: 192px;
+}
+
+.img__big,
+.img__min {
+  background-color: rgb(242, 242, 242);
+  width: 207px;
+  height: 140px;
+  margin-bottom: 20px;
+}
+
+.img__select {
+  background-color: rgb(209, 209, 209);
+  width: 207px;
+  height: 192px;
+}
+
+.img-finish {
+  width: 130px;
+  height: 134px;
+}
+
+.header__img {
+  width: 100%;
+  height: 250px;
+  background: url("../img/mara.jpg") no-repeat top center;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 360px) {
+  .img-finish {
+    width: 150px;
+  }
+}
+@media (min-width: @size-tablet) {
+.img {
+  width: 100px;
+  height: 100px;
+  // margin: 0 28px;
+}
+}
+@media (min-width: @size-desktop) {
+  .header__img {
+    width: 1170px;
+    height: 460px;
+    background: url("../img/mara.jpg") no-repeat;
+    background-size: auto;
+  }
+  .img__title {
+    width: 1170px;
+    height: 460px;
+  }
+  .img {
+    width: 100px;
+    height: 100px;
+    margin: 0 28px;
+  }
+
+  .img-kub {
+    width: 170px;
+    height: 259px;
+  }
+
+  .img__big {
+    width: 570px;
+    height: 400px;
+  }
+
+  .img__min {
+    width: 270px;
+    height: 190px;
+  }
+
+  .img__select {
+    width: 270px;
+    height: 250px;
+  }
+
+  .img-finish {
+    width: 170px;
+    height: 168px;
+  }
+}

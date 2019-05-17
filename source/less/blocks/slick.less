@@ -5,6 +5,8 @@
     align-items: center;
   }
 
+
+.opinion .slick-initialized .slick-slide,
   .programms .slick-initialized .slick-slide {
       align-items: flex-start;
     }
@@ -12,6 +14,121 @@
 
 .slick-list .draggable {
   padding-left: 0;
+}
+
+.opinion__lists .slick-prev,
+.opinion__lists .slick-next {
+  position: absolute;
+  top: -25px;
+  z-index: 100;
+}
+
+.opinion__lists .slick-prev {
+  left: 195px;
+}
+
+.opinion__lists .slick-next {
+  right: 0;
+}
+
+.opinion__lists .slick-prev:before,
+.opinion__lists .slick-next:before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    top: 3px;
+    -moz-osx-font-smoothing: grayscale;
+    outline: none;
+    z-index: 101;
+}
+
+.opinion__lists .slick-prev::before {
+  left: 7px;
+  transform: rotate(-45deg);
+  border-top: 2px solid #cccccc;
+  border-left: 2px solid #cccccc;
+}
+
+.opinion__lists .slick-next::before {
+  right: 5px;
+  transform: rotate(135deg);
+  border-top: 2px solid #000000;
+  border-left: 2px solid #000000;
+}
+
+@media (min-width: 360px) {
+.opinion__lists .slick-prev {
+  left: 235px;
+}
+}
+
+@media (min-width: 400px) {
+.opinion__lists .slick-prev {
+  left: 275px;
+}
+}
+
+@media (min-width: 440px) {
+.opinion__lists .slick-prev {
+  left: 320px;
+}
+}
+
+@media (min-width: 500px) {
+.opinion__lists .slick-prev {
+  left: 370px;
+}
+}
+
+@media (min-width: 550px) {
+.opinion__lists .slick-prev {
+  left: 430px;
+}
+}
+
+@media (min-width: 600px) {
+.opinion__lists .slick-prev {
+  left: 475px;
+}
+}
+
+@media (min-width: 650px) {
+.opinion__lists .slick-prev {
+  left: 520px;
+}
+}
+
+@media (min-width: 700px) {
+.opinion__lists .slick-prev {
+  left: 575px;
+}
+}
+
+@media (min-width: 750px) {
+.opinion__lists .slick-prev {
+  left: 630px;
+}
+}
+
+@media (min-width: 800px) {
+.opinion__lists .slick-prev {
+  left: 680px;
+}
+}
+
+@media (min-width: 850px) {
+.opinion__lists .slick-prev {
+  left: 725px;
+}
+}
+
+@media (min-width: 900px) {
+.opinion__lists .slick-prev {
+  left: 780px;
+}
 }
 
 @media (min-width: @size-tablet) {
@@ -151,4 +268,10 @@
     transform: rotate(135deg);
   }
 
+}
+
+@media (min-width: 950px) {
+.opinion__lists .slick-prev {
+  left: 280px;
+}
 }

@@ -199,3 +199,9 @@ $('.cinema__sort').click(function(e){
   e.preventDefault();
   $('.cinema__select').toggleClass('cinema__hide');
 })
+
+$(".opinion__lists").on('afterChange', function(event, slick, currentSlide){
+   $("#cn").text(currentSlide + 1);
+});
+
+$('.opinion__lists').slick();
