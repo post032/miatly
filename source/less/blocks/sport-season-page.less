@@ -1,0 +1,71 @@
+.sport__button {
+  display: none;
+}
+
+.sport__buttons {
+  display: flex;
+  justify-content: center;
+}
+.sport__button,
+.sport__button-mobile {
+  width: 320px;
+  min-height: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  justify-content: space-around;
+  border: none;
+}
+
+.sport__button-mobile {
+  background-color: rgb(102, 102, 102);
+  display: flex;
+}
+.sport__button-mobile::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: rotate(-45deg);
+  margin-left: 130px;
+}
+
+@media (min-width: 360px) {
+  .sport__button,
+  .sport__button-mobile {
+    width: 360px;
+  }
+}
+
+@media (min-width: @size-tablet) {
+  .sport__buttons {
+    margin-top: 70px;
+  }
+  .sport__button,
+  .sport__button-mobile {
+    width: 192px;
+    display: flex;
+  }
+
+  .sport__button-mobile::after {
+    display: none;
+  }
+}
+@media (min-width: @size-desktop) {
+  .sport__button,
+  .sport__button-mobile {
+    width: 292px;
+}
+
+.sport__button-mobile {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.sport__button:last-of-type {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+}

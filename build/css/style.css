@@ -2177,3 +2177,78 @@ input[type="radio"].visually-hidden {
     border: 1px solid #dedede;
   }
 }
+.sport__button {
+  display: none;
+}
+.sport__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.sport__button,
+.sport__button-mobile {
+  width: 320px;
+  min-height: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.2;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: none;
+}
+.sport__button-mobile {
+  background-color: #666666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.sport__button-mobile::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin-left: 130px;
+}
+@media (min-width: 360px) {
+  .sport__button,
+  .sport__button-mobile {
+    width: 360px;
+  }
+}
+@media (min-width: 768px) {
+  .sport__buttons {
+    margin-top: 70px;
+  }
+  .sport__button,
+  .sport__button-mobile {
+    width: 192px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sport__button-mobile::after {
+    display: none;
+  }
+}
+@media (min-width: 1170px) {
+  .sport__button,
+  .sport__button-mobile {
+    width: 292px;
+  }
+  .sport__button-mobile {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .sport__button:last-of-type {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
