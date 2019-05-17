@@ -5,7 +5,7 @@
     align-items: center;
   }
 
-
+.sport-page__block-list .slick-initialized .slick-slide,
 .opinion .slick-initialized .slick-slide,
   .programms .slick-initialized .slick-slide {
       align-items: flex-start;
@@ -135,7 +135,8 @@
   .slick-list .draggable {
     paddin: 0 50px;
   }
-
+  .sport-page__slider .slick-prev,
+  .sport-page__slider .slick-next,
   .slider__lists .slick-prev,
   .slider__lists .slick-next,
   .kub__lists .slick-prev,
@@ -160,6 +161,7 @@
   .programms__lists .slick-prev {
     left: -20px;
   }
+  .sport-page__slider .slick-prev,
   .slider__lists .slick-prev,
   .circle__lists .slick-prev,
   .kub__lists .slick-prev {
@@ -169,13 +171,16 @@
   .programms__lists .slick-next {
     right: 0;
   }
+
+  .sport-page__slider .slick-next,
   .slider__lists .slick-next,
   .kub__lists .slick-next,
   .circle__lists .slick-next {
     right: 5px;
   }
 
-
+  .sport-page__slider .slick-prev::after,
+  .sport-page__slider .slick-next::after,
   .slider__lists .slick-prev::after,
   .slider__lists .slick-next::after,
   .kub__lists .slick-prev::after,
@@ -192,7 +197,7 @@
     z-index: 3;
   }
 
-
+  .sport-page__slider .slick-prev::after,
   .slider__lists .slick-prev::after,
   .kub__lists .slick-prev::after,
   .circle__lists .slick-prev::after {
@@ -201,6 +206,7 @@
     border-bottom-right-radius: 100px;
   }
 
+  .sport-page__slider .slick-next::after,
   .slider__lists .slick-next::after,
   .kub__lists .slick-next::after,
   .circle__lists .slick-next::after {
@@ -235,6 +241,8 @@
     transform: rotate(135deg);
   }
 
+  .sport-page__slider .slick-prev::before,
+  .sport-page__slider .slick-next::before,
   .slider__lists .slick-prev:before,
   .slider__lists .slick-next:before,
   .kub__lists .slick-prev:before,
@@ -254,13 +262,15 @@
       outline: none;
       z-index: 101;
   }
-
+  .sport-page__slider .slick-prev::before,
   .slider__lists .slick-prev::before,
   .kub__lists .slick-prev::before,
   .circle__lists .slick-prev::before {
     left: 25px;
     transform: rotate(-45deg);
   }
+
+  .sport-page__slider .slick-next::before,
   .slider__lists .slick-next::before,
   .kub__lists .slick-next::before,
   .circle__lists .slick-next::before {

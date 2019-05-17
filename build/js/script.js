@@ -216,3 +216,10 @@ $(".opinion__lists").on('afterChange', function(event, slick, currentSlide){
 });
 
 $('.opinion__lists').slick();
+$('.sport-page__slider').slick({
+  infinite: true,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  centerMode: true,
+});

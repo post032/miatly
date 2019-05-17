@@ -7,6 +7,7 @@
 .buttons__filtrs button {
   margin-right: 10px;
   margin-bottom: 19px;
+  outline: none;
 }
 
 .button__pro {
@@ -20,6 +21,7 @@
   min-height: 40px;
   border: none;
   border-radius: 20px;
+  outline: none;
 }
 
 .button__pro--active {
@@ -34,6 +36,7 @@
   line-height: 1.538;
   border: none;
   background: none;
+  outline: none;
 }
 
 .header__buttons {
@@ -64,18 +67,14 @@
   border-radius: 20px;
   outline: none;
   border: none;
-  // position: absolute;
-  // top: 230px;
 }
 
 .header__buttons button:first-child {
   background-color: rgb(190, 190, 190);
-  // left: 10px;
 }
 
 .header__buttons button:last-child {
   background-color: #43bb54;
-  // right: 10px;
 }
 
 .header__buttons button::before {
@@ -91,10 +90,12 @@
 .header__choice {
   display: flex;
   justify-content: center;
+  outline: none;
 }
 
 .button__season {
   background-color: rgb(102, 102, 102);
+  outline: none;
 }
 
 .button__play {
@@ -107,6 +108,7 @@
   right: 50%;
   transform: translateX(50%);
   top: 90px;
+  outline: none;
 }
 
 .button__mobile:hover,
@@ -122,6 +124,7 @@
 .button__serie {
   width: 160px;
   min-height: 50px;
+  outline: none;
 }
 
 .button__mobile::after,
@@ -136,6 +139,7 @@
   margin-left: 30px;
 }
 
+.button__play-sport::before,
 .button__play::before {
   content: "";
     display: block;
@@ -145,6 +149,31 @@
     border-left: 15px solid #fff;
     margin-right: 8px;
 }
+
+.button__play-sport {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+  background-color: rgb(67, 187, 84);
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  outline: none;
+  cursor: pointer;
+}
+
+
+
 @media (min-width: 360px) {
   .button__mobile,
   .button__season,
@@ -176,6 +205,16 @@
   }
   .button__season::after {
     margin-left: 20px;
+  }
+
+  .button__play-sport {
+    font-size: 0;
+    background: none;
+  }
+
+  .button__play-sport::before {
+    border: 40px solid transparent;
+    border-left: 65px solid #fff;
   }
 
   .button__series {

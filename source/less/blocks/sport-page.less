@@ -1,0 +1,54 @@
+.sport__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.sport-page__blocks {
+  margin-top: 20px;
+}
+
+.sport-img__min {
+  width: 207px;
+  height: 140px;
+}
+.sport-page__block-list {
+  display: none;
+}
+
+
+
+@media (min-width: @size-tablet) {
+  .sport__item {
+    flex-direction: column-reverse;
+  }
+
+  .rating__nosport {
+    display: none!important;
+  }
+
+  .sport-page__element {
+    width: 270px;
+    margin-top: 50px;
+  }
+
+  .sport-img__min {
+    width: 270px;
+    height: 190px;
+  }
+}
+@media (min-width: @size-desktop) {
+  .sport-page__block-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1400px;
+    padding-bottom: 76px;
+    margin-top: 90px;
+  }
+  .sport-page__blocks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
