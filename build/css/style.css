@@ -770,6 +770,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 50px;
 }
 .bookmark__lists,
 .rating__lists {
@@ -915,17 +916,18 @@ input[type="radio"].visually-hidden {
   .bookmark__list {
     margin-right: 40px;
   }
+  .underline {
+    width: 110px;
+    height: 110px;
+  }
 }
 @media (min-width: 1170px) {
   .text {
     display: block;
   }
-  .underline {
-    width: 110px;
-    height: 110px;
-  }
   .header__block {
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
   .bookmark__lists,
   .rating__lists {
@@ -1353,10 +1355,16 @@ input[type="radio"].visually-hidden {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 @media (min-width: 1170px) {
   .cinema__lists {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     margin: 0;
   }
   .cinema__list {
@@ -1488,9 +1496,119 @@ input[type="radio"].visually-hidden {
   border-left: 15px solid #fff;
   margin-right: 8px;
 }
+.header__choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.button__season {
+  background-color: #666666;
+}
+.button__play {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  height: 40px;
+  background-color: #43bb54;
+  border-radius: 20px;
+  position: absolute;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  top: 90px;
+}
+.button__mobile:hover,
+.button__mobile:focus,
+.button__season:hover,
+.button__season:focus {
+  background-color: #9c9c9c;
+}
+.button__mobile,
+.button__season,
+.button__serie {
+  width: 160px;
+  min-height: 50px;
+}
+.button__mobile::after,
+.button__season::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-left: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin-left: 30px;
+}
+.button__play::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-left: 15px solid #fff;
+  margin-right: 8px;
+}
+@media (min-width: 360px) {
+  .button__mobile,
+  .button__season,
+  .button__serie {
+    width: 180px;
+    min-height: 50px;
+  }
+}
+.button__mobile,
+.button__play,
+.button__season,
+.button__serie {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.2;
+}
+.button__serie {
+  display: none;
+}
 @media (min-width: 768px) {
+  .button__mobile::after {
+    display: none;
+  }
+  .button__season::after {
+    margin-left: 20px;
+  }
+  .button__series {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
   .mobile__open {
     display: none;
+  }
+  .button__serie {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .button__mobile,
+  .button__season,
+  .button__serie {
+    width: 109px;
+    height: 50px;
   }
   .button__pro {
     min-width: 170px;
@@ -1508,9 +1626,31 @@ input[type="radio"].visually-hidden {
   }
 }
 @media (min-width: 1170px) {
+  .header__choice {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
   .buttons__filtrs {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .button__play {
+    width: 160px;
+  }
+  .button__season {
+    width: 170px;
+  }
+  .button__mobile,
+  .button__serie {
+    width: 140px;
+  }
+  .button__play {
+    border-radius: 0;
+    min-height: 50px;
+    position: relative;
+    top: 0;
+    right: 80px;
   }
   .header__buttons {
     top: 435px;
@@ -1618,7 +1758,6 @@ input[type="radio"].visually-hidden {
   height: 250px;
   background: url("../img/mara.jpg") no-repeat top center;
   background-size: cover;
-  margin-bottom: 50px;
 }
 @media (min-width: 360px) {
   .img-finish {
