@@ -11,16 +11,16 @@ $(window).on('load resize', function() {
   }
 });
 
-// $(window).on('load resize', function() {
-//   if ($(window).width() >= 768) {
-//     $('.button__series:not(.slick-initialized)').slick({
-//       speed: 300,
-//       slidesToShow: 5,
-//     });
-//   } else {
-//     $(".button__series.slick-initialized").slick("unslick");
-//   }
-// });
+$(window).on('load resize', function() {
+  if ($(window).width() >= 768) {
+    $('.talkshow__slider:not(.slick-initialized)').slick({
+      speed: 300,
+      slidesToShow: 4,
+    });
+  } else {
+    $(".talkshow__slider.slick-initialized").slick("unslick");
+  }
+});
 
 $(window).on('load resize', function() {
   if ($(window).width() >= 768) {
