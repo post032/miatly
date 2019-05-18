@@ -1,0 +1,190 @@
+.today {
+  position: relative;
+  box-sizing: border-box;
+}
+.today__blocks,
+.today__block1,
+.today__block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.today__blocks {
+  justify-content: center;
+  width: 100%;
+}
+
+.today__block1 {
+  justify-content: center;
+}
+.today__block{
+  width: 320px;
+  justify-content: space-between;
+}
+
+.today__new,
+.today__element {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.today__element:nth-child(3),
+.today__element:nth-child(4),
+.today__blocks--reverse .today__block {
+  display: none;
+}
+
+@media (min-width: 360px) {
+  .today__new,
+  .today__element {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+.today__element {
+  width: 150px;
+}
+
+.today__new {
+  width: 320px;
+}
+
+.today__name {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: left;
+  margin-top: 9px;
+}
+
+.today__time {
+  font-size: 11px;
+  font-weight: normal;
+  color: rgb(102, 102, 102);
+  line-height: 1.2;
+  text-align: left;
+}
+
+.today__icon {
+  position: relative;
+}
+
+.today__icon::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/tv_sprites.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.today__icon1::before {
+  background-color: #7043bb;
+  background-position: 0px 6px;
+  background-size: 250%;
+
+}
+
+.today__icon2::before {
+  background-color: #ff96c0;
+  background-position: -146px -2px;
+}
+
+.today__icon3::before {
+  background-color: #3a87b3;
+  background-position: -47px -31px;
+  background-size: 306%;
+}
+
+.today__icon4::before {
+  background-color: #3538cb;
+  background-position: -56px -1px;
+  background-size: 340%;
+}
+
+.today__icon5::before {
+  background-color: #e09900;
+  background-position: -3px -33px;
+  background-size: 300%;
+}
+
+@media (min-width: @size-tablet) {
+  .today__blocks--reverse {
+    flex-direction: row-reverse;
+  }
+  .today__element:nth-child(3),
+  .today__element:nth-child(4),
+  .today__blocks--reverse .today__block {
+    display: flex;
+  }
+}
+@media (min-width: @size-desktop) {
+  .today__icon::before {
+    width: 70px;
+    height: 70px;
+  }
+  .today__icon1::before {
+    background-color: #7043bb;
+    background-position: 0px 10px;
+  }
+
+  .today__icon2::before {
+    background-color: #ff96c0;
+    background-position: -135px 9px;
+  }
+
+  .today__icon3::before {
+    background-color: #3a87b3;
+    background-position: -82px -51px;
+}
+
+
+  .today__icon4::before {
+    background-color: #3538cb;
+    background-position: -98px -5px
+  }
+
+  .today__icon5::before {
+    background-color: #e09900;
+    background-position: -4px -56px;
+}
+
+  .today__name {
+    margin-top: 20px;
+  }
+  .today__blocks {
+    justify-content: space-between;
+  }
+  .today__block,
+  .today__block1 {
+    width: 572px;
+  }
+  .today__new,
+  .today__element {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .today__name {
+    font-size: 16px;
+  }
+  .today__new {
+    width: 572px;
+  }
+  .img__big-size {
+    width: 572px;
+    height: 400px;
+  }
+  .today__element {
+    width: 270px;
+  }
+  .img__min-size {
+    width: 270px;
+    height: 190px;
+  }
+}
