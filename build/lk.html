@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+  <head> 
+    <meta charset="UTF-8">
+    <title>miatly</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="page-header container">
+      <div class="menu">
+        <div class="menu__wrapper"><a class="menu__logo" href="index.html">миатли</a>
+          <div class="nav__wrapper">
+            <div class="nav__limit">
+              <nav class="nav">
+                <ul class="nav__lists">
+                  <li><a href="cinema.html">Фильмы</a></li>
+                  <li><a href="serials.html">Сериалы</a></li>
+                  <li><a href="sport.html">Спорт</a></li>
+                  <li><a href="#">Мультфильмы</a></li>
+                  <li><a href="talkshow.html">Ток-шоу</a></li>
+                  <li><a href="today.html">ТВ онлайн</a></li>
+                  <li><a href="lk.html">Подборки</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="menu__item">
+            <div class="menu__search">
+              <input class="menu__input-search" type="search">
+            </div>
+            <input class="menu__range" type="range" value="0" min="0" max="1" oninput="range()">
+            <button class="menu__enter" type="button">Войти</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="lk container">
+        <div class="lk__profile"><img class="lk__img" src="img/face-profile.png">
+          <p class="lk__name"> @someoneelse</p>
+          <ul class="lk__elements">
+            <li>
+              <p class="lk__element lk__icon1">Закладки</p>
+            </li>
+            <li> 
+              <p class="lk__element lk__icon2">Просмотрено</p>
+            </li>
+            <li>
+              <p class="lk__element lk__icon3">Напоминания</p>
+            </li>
+          </ul>
+        </div>
+        <section class="lk__items">
+          <h1 class="lk__title">Закладки <span>54</span></h1>
+          <form class="lk__filtrs">
+            <button class="lk__mobile">фильтр и сортировка</button>
+            <button class="lk__choice lk__nomobile">По дате добавления</button>
+          </form>
+          <section class="lk__lists"><a class="lk__list" href="film.html"><img class="img-lk" src="img/film-1.jpg">
+              <h3 class="name">Чёрная пантера</h3>
+              <p class="category">триллер</p></a><a class="lk__list" href="film.html"><img class="img-lk" src="img/film-2.jpg">
+              <h3 class="name">Hollywood Portfolio</h3>
+              <p class="category">комедия, мелодрама</p></a><a class="lk__list" href="film.html"><img class="img-lk" src="img/film-3.jpg">
+              <h3 class="name">Голодные игры</h3>
+              <p class="category">фэнтази, драма</p></a><a class="lk__list" href="film.html"><img class="img-lk" src="img/film-1.jpg">
+              <h3 class="name">Чёрная пантера</h3>
+              <p class="category">триллер</p></a><a class="lk__list" href="film.html"><img class="img-lk" src="img/film-4.jpg">
+              <h3 class="name">Лига справедливос..</h3>
+              <p class="category">документальный филмьм</p></a><a class="lk__list" href="film.html"><img class="img-lk" src="img/film-5.jpg">
+              <h3 class="name">Зои</h3>
+              <p class="category">документальный филмьм</p></a><a class="lk__list" href="film.html"><img class="img-lk" src="img/film-6.jpg">
+              <h3 class="name">Гоголь Вий</h3>
+              <p class="category">документальный филмьм</p></a><a class="lk__list" href="film.html"><img class="img-lk" src="img/film-7.jpg">
+              <h3 class="name">Безумный Макс</h3>
+              <p class="category">фэнтази, драма</p></a></section>
+        </section>
+      </section>
+    </main>
+    <div class="footer__line">
+      <footer class="footer container">
+        <ul class="footer__menu">
+          <li><a href="#">О нас          </a></li>
+          <li><a href="#">Партнёрам</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="footer__social">
+          <li><a href="#"> <img src="img/odnoklassniki.svg"><span class="visually-hidden">Одноклассники          </span></a></li>
+          <li><a href="#"><img src="img/vk.svg"><span class="visually-hidden">вконтакте</span></a></li>
+          <li><a href="#"><img src="img/facebook.svg"><span class="visually-hidden">фейсбук</span></a></li>
+        </ul>
+      </footer>
+    </div>
+    <script type="text/javascript" src="js/jquery.min-3.4.1.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
