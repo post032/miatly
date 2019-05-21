@@ -1201,8 +1201,8 @@ input[type="radio"].visually-hidden {
     width: 110px;
     height: 110px;
   }
-  .kub__list:hover > .img__kub,
-  .kub__list:focus > .img__kub {
+  .kub__list:hover .img__kub,
+  .kub__list:focus .img__kub {
     width: 180px;
     height: 264px;
   }
@@ -1216,7 +1216,7 @@ input[type="radio"].visually-hidden {
     background-position: -50px 10px;
     background-repeat: no-repeat;
     position: absolute;
-    top: -23px;
+    top: -20px;
     right: 40px;
   }
   .kub__list:hover .name,
@@ -2210,6 +2210,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 .img-kub {
+  margin-top: 10px;
   width: 130px;
   height: 192px;
 }
