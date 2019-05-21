@@ -223,3 +223,55 @@ $('.sport-page__slider').slick({
   slidesToScroll: 4,
   centerMode: true,
 });
+
+
+$('#bookmark-open').click(function(e){
+  e.preventDefault();
+    $('#bookmark-open').addClass('lk__icon1r');
+    $('#viewed-open').removeClass('lk__icon2r');
+    $('#remind-open').removeClass('lk__icon3r');
+  if($('.lk__items').hasClass('lk__close'))
+    $('#bookmark').removeClass('lk__close');
+    $('#remind').addClass('lk__close');
+    $('#viewed').addClass('lk__close');
+});
+
+$('#viewed-open').click(function(e){
+  e.preventDefault();
+    $('#viewed-open').addClass('lk__icon2r');
+    $('#bookmark-open').removeClass('lk__icon1r');
+    $('#remind-open').removeClass('lk__icon3r');
+  if($('.lk__items').hasClass('lk__close'))
+    $('#bookmark').addClass('lk__close');
+    $('#remind').addClass('lk__close');
+    $('#viewed').removeClass('lk__close');
+});
+
+$('#remind-open').click(function(e){
+  e.preventDefault();
+    $('#remind-open').addClass('lk__icon3r');
+    $('#bookmark-open').removeClass('lk__icon1r');
+    $('#viewed-open').removeClass('lk__icon2r');
+  if($('.lk__items').hasClass('lk__close'))
+    $('#bookmark').addClass('lk__close');
+    $('#remind').removeClass('lk__close');
+    $('#viewed').addClass('lk__close');
+});
+
+$('.nav__lists li').hover(function(){
+  $('.nav__hover').attr('style', 'display: flex;');
+});
+
+$('.nav__hover').mouseleave(function(){
+  $('.nav__hover').attr('style', 'display: none;');
+});
+// 
+// $('.menu__range[value ="0"]').change(function(){
+//   $('.menu__range').addClass('menu__range-day');
+//   $('.menu__range').removeClass('menu__range-night');
+// });
+//
+// $('.menu__range[value ="1"]').change(function(){
+//   $('.menu__range').removeClass('menu__range-day');
+//   $('.menu__range').addClass('menu__range-night');
+// });

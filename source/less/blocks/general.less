@@ -65,6 +65,48 @@
   color: #1e46db;
 }
 
+.circle__list:hover .name,
+.circle__list:focus .name {
+  color: #1e46db;
+}
+
+.circle__list:hover .underline::after,
+.circle__list:focus .underline::after {
+  content: "смотреть";
+  border-radius: 50%;
+  width: 100px;
+  height:100px;
+  position: absolute;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+  position: absolute;
+  z-index: 10px;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle__list:hover .underline::before,
+.circle__list:focus .underline::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-left: 10px solid #fff;
+  position: absolute;
+  z-index: 10;
+  left: 10px;
+
+}
+
+
+
+
 .category {
   font-size: 11px;
   font-weight: normal;
@@ -100,8 +142,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
+.circle__list:hover .underline,
+.circle__list:focus .underline {
+  border: 4px solid red;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  z-index: 2;
+}
 
 .all__link {
   display: block;
@@ -112,7 +162,12 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
-  color: rgb(153, 153, 153);
+  color: rgb(0, 0, 0);
+}
+
+.all__link:hover,
+.all__link:focus {
+  color: #3538cb;
 }
 
 .talkshow__link {
@@ -292,10 +347,12 @@
 
   .kub__list {
     width: 170px;
+    position: relative;
   }
 
   .circle__list {
     width: 100px;
+    position: relative;
   }
 
   .category {
@@ -321,6 +378,37 @@
       width: 110px;
       height: 110px;
     }
+
+    .circle__list:hover .underline,
+    .circle__list:focus .underline {
+      width: 110px;
+      height: 110px;
+    }
+
+      .kub__list:hover .img__kub,
+      .kub__list:focus .img__kub {
+          width: 180px;
+          height: 264px;
+      }
+
+      .kub__list:hover::before ,
+      .kub__list:focus::before {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 50px;
+        background-image: url("../img/css-sprite.png");
+        background-position: -50px 10px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -23px;
+        right: 40px;;
+      }
+
+      .kub__list:hover .name,
+      .kub__list:focus .name {
+          color: #1e46db;
+      }
 }
 @media (min-width: @size-desktop) {
   .text {
@@ -344,4 +432,5 @@
     font-size: 14px;
     font-weight: normal;
   }
+
 }

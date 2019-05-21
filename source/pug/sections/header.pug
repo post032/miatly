@@ -13,7 +13,7 @@ div.menu
             li
               a(href="sport.html") Спорт
             li
-              a(href="#") Мультфильмы
+              a(href="#").nav__active Мультфильмы
             li
               a(href="talkshow.html") Ток-шоу
             li
@@ -23,6 +23,63 @@ div.menu
     div.menu__item
       div.menu__search
         input(type="search").menu__input-search
-      input(type="range" value="0" min="0" max="1" oninput="range()").menu__range
-      button(type="button").menu__enter Войти
+      input(type="range" value="0" min="0" max="1" oninput="range()").menu__range.menu__range-day //.menu__range-night
+      button(type="button").menu__enter Войти 
     
+section.nav__hover.conteiner
+  div.nav__element
+    ul.nav__element-lists
+      li
+        a(href="#") Советские
+      li
+        a(href="#") Аниме
+      li
+        a(href="#") Для взрослых
+      li
+        a(href="#") Для детей
+      li
+        a(href="#") Полнометражные
+      li
+        a(href="#") Приключения
+      li
+        a(href="#") Развивающие
+      li
+        a(href="#") Сериалы
+  div.nav__element
+    ul.nav__element-lists
+      li
+        a(href="#") Новинки
+      li
+        a(href="#") Трейлеры
+      li
+        a(href="#") Сериалы
+      li
+        a(href="#") Мультики 2018 года
+      li
+        a(href="#") Мультики 2017 года
+      li
+        a(href="#") Мультики 2016 года
+      li
+        a(href="#") Мультики в HD
+      li
+        a(href="#") Советские
+      li
+        a(href="#") Русские
+      li
+        a(href="#") Американские
+      li
+        a(href="#") Зарубежные
+      li
+        a(href="#") Мультфильмы по подписке
+      li
+        a(href="#").nav__popular Мультфильмы Disney
+      li
+        a(href="#").nav__popular «Маша и Медведь». Мировая премьера новой серии!
+  div.nav__element
+    p Случайный мультфильм
+    div.nav__advice
+      img(src="img/film-5.jpg" alt="мультфильм").nav__element-img
+      h3.name Зои
+      p.category документальный фильм
+      span.nav__info IMDb: 6.70 (4399)
+      button(type="button").nav__button Смотреть

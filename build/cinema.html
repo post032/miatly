@@ -19,7 +19,7 @@
                   <li><a href="cinema.html">Фильмы</a></li>
                   <li><a href="serials.html">Сериалы</a></li>
                   <li><a href="sport.html">Спорт</a></li>
-                  <li><a href="#">Мультфильмы</a></li>
+                  <li><a class="nav__active" href="#">Мультфильмы</a></li>
                   <li><a href="talkshow.html">Ток-шоу</a></li>
                   <li><a href="today.html">ТВ онлайн</a></li>
                   <li><a href="lk.html">Подборки</a></li>
@@ -31,11 +31,51 @@
             <div class="menu__search">
               <input class="menu__input-search" type="search">
             </div>
-            <input class="menu__range" type="range" value="0" min="0" max="1" oninput="range()">
-            <button class="menu__enter" type="button">Войти</button>
+            <input class="menu__range menu__range-day" type="range" value="0" min="0" max="1" oninput="range()">
+            <button class="menu__enter" type="button">Войти </button>
           </div>
         </div>
       </div>
+      <section class="nav__hover conteiner">
+        <div class="nav__element">
+          <ul class="nav__element-lists">
+            <li><a href="#">Советские</a></li>
+            <li><a href="#">Аниме</a></li>
+            <li><a href="#">Для взрослых</a></li>
+            <li><a href="#">Для детей</a></li>
+            <li><a href="#">Полнометражные</a></li>
+            <li><a href="#">Приключения</a></li>
+            <li><a href="#">Развивающие</a></li>
+            <li><a href="#">Сериалы</a></li>
+          </ul>
+        </div>
+        <div class="nav__element">
+          <ul class="nav__element-lists">
+            <li><a href="#">Новинки</a></li>
+            <li><a href="#">Трейлеры</a></li>
+            <li><a href="#">Сериалы</a></li>
+            <li><a href="#">Мультики 2018 года</a></li>
+            <li><a href="#">Мультики 2017 года</a></li>
+            <li><a href="#">Мультики 2016 года</a></li>
+            <li><a href="#">Мультики в HD</a></li>
+            <li><a href="#">Советские</a></li>
+            <li><a href="#">Русские</a></li>
+            <li><a href="#">Американские</a></li>
+            <li><a href="#">Зарубежные</a></li>
+            <li><a href="#">Мультфильмы по подписке</a></li>
+            <li><a class="nav__popular" href="#">Мультфильмы Disney</a></li>
+            <li><a class="nav__popular" href="#">«Маша и Медведь». Мировая премьера новой серии!</a></li>
+          </ul>
+        </div>
+        <div class="nav__element">
+          <p>Случайный мультфильм</p>
+          <div class="nav__advice"><img class="nav__element-img" src="img/film-5.jpg" alt="мультфильм">
+            <h3 class="name">Зои</h3>
+            <p class="category">документальный фильм</p><span class="nav__info">IMDb: 6.70 (4399)</span>
+            <button class="nav__button" type="button">Смотреть</button>
+          </div>
+        </div>
+      </section>
     </header>
     <main>
       <section class="banner">

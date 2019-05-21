@@ -43,6 +43,8 @@
     background-image: url("../img/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: 90% center;
+  outline: none;
+  cursor: pointer;
 }
 
 .cinema__lists {
@@ -55,6 +57,33 @@
 .cinema__list {
   margin-bottom: 68px;
   margin-right: 20px;
+  position: relative;
+}
+
+.cinema__list:hover .img-kub,
+.cinema__list:focus .img-kub {
+  transition: 1s;
+  width: 180px;
+  height: 264px;
+}
+
+.cinema__list:hover .name,
+.cinema__list:focus .name {
+  color: #1e46db;
+}
+
+.cinema__list:hover::before,
+.cinema__list:focus::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 50px;
+  background-image: url("../img/css-sprite.png");
+  background-position: -50px 10px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -23px;
+  right: 10px;
 }
 
 .cinema__list1 {

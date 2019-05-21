@@ -2,7 +2,7 @@
   box-sizing: border-box;
   position: relative;
 }
-
+.nav__element-lists,
 .nav__lists {
   padding: 0;
   margin: 0;
@@ -16,6 +16,8 @@
   align-items: center;
   justify-content: center;
   flex: none;
+  position: relative;
+  padding: 20px 0;
 }
 
 
@@ -27,6 +29,10 @@
   line-height: 1.2;
   text-align: left;
   text-decoration: none;
+}
+
+.nav__lists li .nav__active {
+  color: #3538cb;
 }
 
 .nav__lists li:last-child {
@@ -47,7 +53,116 @@
   margin-top: 24px;
 }
 
+.nav__element-lists {
+  flex-direction: column;
+}
+
+.nav__element-lists li a {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+}
+
+.nav__element-lists li .nav__popular {
+  color: #ee3138;
+}
+
+.nav__element-lists li a:hover,
+.nav__element-lists li a:focus {
+  color: #3538cb;
+}
+
+.nav__element-img {
+  width: 170px;
+  height: 250px;
+}
+
+.nav__info {
+  font-size: 12px;
+  font-weight: normal;
+  color: rgb(153, 153, 153);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.nav__button {
+  background-color: rgb(67, 187, 84);
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 29px;
+}
+
+.nav__element {
+  width: 180px;
+}
+
+.nav__advice {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav__advice:hover .nav__element-img,
+.nav__advice:focus .nav__element-img {
+  width: 180px;
+  height: 264px;
+}
+
+.nav__hover {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  z-index: 300;
+  background: #ffffff;
+  padding-bottom: 60px;
+}
+
+.nav__element p {
+  font-size: 13px;
+  font-weight: normal;
+  color: rgb(153, 153, 153);
+  line-height: 1.2;
+  margin-top: 7px;
+}
+
+.nav__lists li:hover .nav__hover,
+.nav__lists li:focus .nav__hover {
+  z-index: 300;
+}
+
+.nav__lists li:hover a,
+.nav__lists li:focus a {
+  color: #3538cb;
+}
+
+.nav__lists li:hover::before,
+.nav__lists li:focus::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-top: 5px solid #3538cb;
+  position: absolute;
+  top: 0;
+}
+
 @media (min-width: @size-tablet) {
+  .nav__hover {
+    left: 350px;
+    width: 730px;
+  }
 
 }
 @media (min-width: 988px) {

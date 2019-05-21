@@ -135,6 +135,12 @@
   .slick-list .draggable {
     paddin: 0 50px;
   }
+  .banner__limit .slick-prev,
+  .banner__limit .slick-next {
+    position: absolute;
+    top: 150px;
+    z-index: 100
+  }
   .talkshow__slider .slick-prev,
   .talkshow__slider .slick-next,
   .sport-page__slider .slick-prev,
@@ -163,6 +169,10 @@
   .programms__lists .slick-prev {
     left: -20px;
   }
+
+  .banner__limit .slick-prev {
+    left: 100px;
+  }
   .talkshow__slider .slick-prev,
   .sport-page__slider .slick-prev,
   .slider__lists .slick-prev,
@@ -175,6 +185,9 @@
     right: 0;
   }
 
+  .banner__limit .slick-next {
+    right: 100px;
+  }
   .talkshow__slider .slick-next,
   .sport-page__slider .slick-next,
   .slider__lists .slick-next,
@@ -247,7 +260,21 @@
     right: 5px;
     transform: rotate(135deg);
   }
-
+  .banner__limit .slick-prev::before,
+  .banner__limit .slick-next::before {
+    content: "";
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-top: 2px solid #4d4d4d;
+    border-left: 2px solid #4d4d4d;
+      -webkit-font-smoothing: antialiased;
+      position: absolute;
+      top: 7px;
+      -moz-osx-font-smoothing: grayscale;
+      outline: none;
+      z-index: 101;
+  }
   .talkshow__slider .slick-prev::before,
   .talkshow__slider .slick-next::before,
   .sport-page__slider .slick-prev::before,
@@ -271,7 +298,7 @@
       outline: none;
       z-index: 101;
   }
-
+  .banner__limit .slick-prev::before,
   .talkshow__slider .slick-prev::before,
   .sport-page__slider .slick-prev::before,
   .slider__lists .slick-prev::before,
@@ -281,6 +308,7 @@
     transform: rotate(-45deg);
   }
 
+  .banner__limit .slick-next::before,
   .talkshow__slider .slick-next::before,
   .sport-page__slider .slick-next::before,
   .slider__lists .slick-next::before,

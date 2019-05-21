@@ -1,20 +1,112 @@
-section.lk.container
-  div.lk__profile
-    img(src="img/face-profile.png").lk__img
-    p.lk__name  @someoneelse
-    ul.lk__elements
-      li
-        p.lk__element.lk__icon1 Закладки
-      li 
-        p.lk__element.lk__icon2 Просмотрено
-      li
-        p.lk__element.lk__icon3 Напоминания
-  section.lk__items
+section.lk
+  div.lk__profile--bg
+    div.lk__profile.container
+      img(src="img/face-profile.png").lk__img
+      p.lk__name  @someoneelse
+      ul.lk__elements.container
+        li
+          a(href="#" id="bookmark-open").lk__element.lk__icon1.lk__icon1r Закладки
+        li 
+          a(href="#" id="viewed-open").lk__element.lk__icon2 Просмотрено
+        li
+          a(href="#" id="remind-open").lk__element.lk__icon3 Напоминания
+      button(type="button").lk__enter Выйти
+        
+  section(id="bookmark").lk__items.container
     h1.lk__title Закладки 
       span 54
     form.lk__filtrs
       button.lk__mobile фильтр и сортировка
       button.lk__choice.lk__nomobile По дате добавления
+    section.lk__lists
+      a(href="film.html").lk__list
+        img(src="img/film-1.jpg").img-lk
+        h3.name Чёрная пантера
+        p.category триллер
+      a(href="film.html").lk__list
+        img(src="img/film-2.jpg").img-lk
+        h3.name Hollywood Portfolio
+        p.category комедия, мелодрама
+      a(href="film.html").lk__list
+        img(src="img/film-3.jpg").img-lk
+        h3.name Голодные игры
+        p.category фэнтази, драма
+      a(href="film.html").lk__list
+        img(src="img/film-1.jpg").img-lk
+        h3.name Чёрная пантера
+        p.category триллер
+      a(href="film.html").lk__list
+        img(src="img/film-4.jpg").img-lk
+        h3.name Лига справедливос..
+        p.category документальный филмьм
+      a(href="film.html").lk__list
+        img(src="img/film-5.jpg").img-lk
+        h3.name Зои
+        p.category документальный филмьм
+      a(href="film.html").lk__list
+        img(src="img/film-6.jpg").img-lk
+        h3.name Гоголь Вий
+        p.category документальный филмьм
+      a(href="film.html").lk__list
+        img(src="img/film-7.jpg").img-lk
+        h3.name Безумный Макс
+        p.category фэнтази, драма
+        
+        
+  section(id="remind").lk__items.lk__close.container
+    h1.lk__title Напоминания
+    ul.lk__sub-menu
+      li
+        a(href="#").lk__button-menu Фильмы
+      li
+        a(href="#").lk__button-menu мультфильмы
+      li
+        a(href="#").lk__button-menu сериалы
+      li
+        a(href="#").lk__button-menu.lk__button-menu--active спорт
+      li
+        a(href="#").lk__button-menu ток-шоу
+      li
+        a(href="#").lk__button-menu тв онлайн
+    form.lk__filtrs
+      button.lk__mobile фильтр и сортировка
+      button.lk__choice.lk__nomobile По дате премьеры
+    section.lk__lists
+      a(href="#").lk__list.lk__list--size
+        img(src="img/new-2.jpg").image-lk
+        h3.name Чемпионал Европы по водному поло среди женщин 2019
+        p.category 21 апреля 18:00
+      a(href="#").lk__list.lk__list--size
+        img(src="img/new-3.jpg").image-lk
+        h3.name Лига чемпионов 2019
+        p.category 25 апреля 11:30
+      a(href="#").lk__list.lk__list--size
+        img(src="img/new-2.jpg").image-lk
+        h3.name Чемпионал Европы по водному поло среди женщин 2019
+        p.category 21 апреля 18:00
+      a(href="#").lk__list.lk__list--size
+        img(src="img/new-3.jpg").image-lk
+        h3.name Лига чемпионов 2019
+        p.category 25 апреля 11:30
+      
+  section(id="viewed").lk__items.lk__close.container
+    h1.lk__title вы смотрели
+    ul.lk__sub-menu
+      li
+        a(href="#").lk__button-menu Фильмы
+      li
+        a(href="#").lk__button-menu мультфильмы
+      li
+        a(href="#").lk__button-menu сериалы
+      li
+        a(href="#").lk__button-menu.lk__button-menu--active спорт
+      li
+        a(href="#").lk__button-menu ток-шоу
+      li
+        a(href="#").lk__button-menu тв онлайн
+    form.lk__filtrs
+      button.lk__mobile фильтр и сортировка
+      button.lk__choice.lk__nomobile По дате просмотра
     section.lk__lists
       a(href="film.html").lk__list
         img(src="img/film-1.jpg").img-lk

@@ -8,6 +8,7 @@
   margin-right: 10px;
   margin-bottom: 19px;
   outline: none;
+  cursor: pointer;
 }
 
 .button__pro {
@@ -22,6 +23,7 @@
   border: none;
   border-radius: 20px;
   outline: none;
+  cursor: pointer;
 }
 
 .button__pro--active {
@@ -37,6 +39,7 @@
   border: none;
   background: none;
   outline: none;
+  cursor: pointer;
 }
 
 .header__buttons {
@@ -66,6 +69,7 @@
   justify-content: center;
   border-radius: 20px;
   outline: none;
+  cursor: pointer;
   border: none;
 }
 
@@ -91,11 +95,13 @@
   display: flex;
   justify-content: center;
   outline: none;
+  cursor: pointer;
 }
 
 .button__season {
   background-color: rgb(102, 102, 102);
   outline: none;
+  cursor: pointer;
 }
 
 .button__play {
@@ -109,15 +115,15 @@
   transform: translateX(50%);
   top: 90px;
   outline: none;
+  cursor: pointer;
 }
 
-.button__mobile:hover,
 .button__mobile:focus,
-.button__season:hover,
-.button__season:focus {
+.button__mobile:hover,
+.button__season:focus,
+.button__season:hover {
   background-color: #9c9c9c;
 }
-
 
 .button__mobile,
 .button__season,
@@ -125,6 +131,7 @@
   width: 160px;
   min-height: 50px;
   outline: none;
+  cursor: pointer;
 }
 
 .button__mobile::after,
@@ -138,17 +145,18 @@
   transform: rotate(-45deg);
   margin-left: 30px;
 }
+.nav__button::before,
 .button__play-show::before,
-.button__trailer-show::before,
 .button__play-sport::before,
-.button__play::before {
+.button__play::before,
+.button__trailer-show::before {
   content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
-    border-left: 15px solid #fff;
-    margin-right: 8px;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-left: 10px solid #fff;
+  margin-right: 8px;
 }
 
 .button__play-sport {
@@ -172,6 +180,7 @@
   outline: none;
   cursor: pointer;
 }
+
 .button__play-show,
 .button__trailer-show {
   font-size: 16px;
@@ -186,7 +195,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  outline: none;
+  cursor: pointer;
 }
+
 .show-play__buttons {
   display: flex;
   justify-content: space-between;
@@ -200,17 +212,20 @@
 
 .button__play-show {
   background-color: rgb(67, 187, 84);
+  outline: none;
+  cursor: pointer;
 }
 
 .button__trailer-show {
   background-color: rgb(190, 190, 190);
+  outline: none;
+  cursor: pointer;
 }
 
-.button__trailer-show span,
-.button__play-show span {
+.button__play-show span,
+.button__trailer-show span {
   display: none;
 }
-
 @media (min-width: 360px) {
   .button__mobile,
   .button__season,
@@ -237,8 +252,8 @@
   display: none;
 }
 @media (min-width: @size-tablet) {
-  .button__trailer-show span,
-  .button__play-show span {
+  .button__play-show span,
+  .button__trailer-show span {
     display: inline;
   }
 
@@ -254,18 +269,28 @@
   .button__mobile::after {
     display: none;
   }
+
   .button__season::after {
     margin-left: 20px;
   }
 
   .button__play-sport {
+    top: 95%;
+  }
+
+  .header__img--sport:focus .button__play-sport,
+  .header__img--sport:hover .button__play-sport {
     font-size: 0;
     background: none;
   }
 
-  .button__play-sport::before {
+  .header__img--sport:focus .button__play-sport::before,
+  .header__img--sport:hover .button__play-sport::before {
     border: 40px solid transparent;
+    transition: 1s;
     border-left: 65px solid #fff;
+    top: -230px;
+    position: absolute;
   }
 
   .button__series {
@@ -310,6 +335,7 @@
   .show-play__buttons {
     top: 440px;
   }
+
   .header__choice {
     justify-content: flex-start;
   }

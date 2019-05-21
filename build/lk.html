@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>miatly</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -17,7 +19,7 @@
                   <li><a href="cinema.html">Фильмы</a></li>
                   <li><a href="serials.html">Сериалы</a></li>
                   <li><a href="sport.html">Спорт</a></li>
-                  <li><a href="#">Мультфильмы</a></li>
+                  <li><a class="nav__active" href="#">Мультфильмы</a></li>
                   <li><a href="talkshow.html">Ток-шоу</a></li>
                   <li><a href="today.html">ТВ онлайн</a></li>
                   <li><a href="lk.html">Подборки</a></li>
@@ -29,33 +31,126 @@
             <div class="menu__search">
               <input class="menu__input-search" type="search">
             </div>
-            <input class="menu__range" type="range" value="0" min="0" max="1" oninput="range()">
-            <button class="menu__enter" type="button">Войти</button>
+            <input class="menu__range menu__range-day" type="range" value="0" min="0" max="1" oninput="range()">
+            <button class="menu__enter" type="button">Войти </button>
           </div>
         </div>
       </div>
-    </header>
-    <main>
-      <section class="lk container">
-        <div class="lk__profile"><img class="lk__img" src="img/face-profile.png">
-          <p class="lk__name"> @someoneelse</p>
-          <ul class="lk__elements">
-            <li>
-              <p class="lk__element lk__icon1">Закладки</p>
-            </li>
-            <li> 
-              <p class="lk__element lk__icon2">Просмотрено</p>
-            </li>
-            <li>
-              <p class="lk__element lk__icon3">Напоминания</p>
-            </li>
+      <section class="nav__hover conteiner">
+        <div class="nav__element">
+          <ul class="nav__element-lists">
+            <li><a href="#">Советские</a></li>
+            <li><a href="#">Аниме</a></li>
+            <li><a href="#">Для взрослых</a></li>
+            <li><a href="#">Для детей</a></li>
+            <li><a href="#">Полнометражные</a></li>
+            <li><a href="#">Приключения</a></li>
+            <li><a href="#">Развивающие</a></li>
+            <li><a href="#">Сериалы</a></li>
           </ul>
         </div>
-        <section class="lk__items">
+        <div class="nav__element">
+          <ul class="nav__element-lists">
+            <li><a href="#">Новинки</a></li>
+            <li><a href="#">Трейлеры</a></li>
+            <li><a href="#">Сериалы</a></li>
+            <li><a href="#">Мультики 2018 года</a></li>
+            <li><a href="#">Мультики 2017 года</a></li>
+            <li><a href="#">Мультики 2016 года</a></li>
+            <li><a href="#">Мультики в HD</a></li>
+            <li><a href="#">Советские</a></li>
+            <li><a href="#">Русские</a></li>
+            <li><a href="#">Американские</a></li>
+            <li><a href="#">Зарубежные</a></li>
+            <li><a href="#">Мультфильмы по подписке</a></li>
+            <li><a class="nav__popular" href="#">Мультфильмы Disney</a></li>
+            <li><a class="nav__popular" href="#">«Маша и Медведь». Мировая премьера новой серии!</a></li>
+          </ul>
+        </div>
+        <div class="nav__element">
+          <p>Случайный мультфильм</p>
+          <div class="nav__advice"><img class="nav__element-img" src="img/film-5.jpg" alt="мультфильм">
+            <h3 class="name">Зои</h3>
+            <p class="category">документальный фильм</p><span class="nav__info">IMDb: 6.70 (4399)</span>
+            <button class="nav__button" type="button">Смотреть</button>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="lk">
+        <div class="lk__profile--bg">
+          <div class="lk__profile container"><img class="lk__img" src="img/face-profile.png">
+            <p class="lk__name"> @someoneelse</p>
+            <ul class="lk__elements container">
+              <li><a class="lk__element lk__icon1 lk__icon1r" href="#" id="bookmark-open">Закладки</a></li>
+              <li> <a class="lk__element lk__icon2" href="#" id="viewed-open">Просмотрено</a></li>
+              <li><a class="lk__element lk__icon3" href="#" id="remind-open">Напоминания</a></li>
+            </ul>
+            <button class="lk__enter" type="button">Выйти</button>
+          </div>
+        </div>
+        <section class="lk__items container" id="bookmark">
           <h1 class="lk__title">Закладки <span>54</span></h1>
           <form class="lk__filtrs">
             <button class="lk__mobile">фильтр и сортировка</button>
             <button class="lk__choice lk__nomobile">По дате добавления</button>
+          </form>
+          <section class="lk__lists"><a class="lk__list" href="film.html"><img class="img-lk" src="img/film-1.jpg">
+              <h3 class="name">Чёрная пантера</h3>
+              <p class="category">триллер</p></a><a class="lk__list" href="film.html"><img class="img-lk" src="img/film-2.jpg">
+              <h3 class="name">Hollywood Portfolio</h3>
+              <p class="category">комедия, мелодрама</p></a><a class="lk__list" href="film.html"><img class="img-lk" src="img/film-3.jpg">
+              <h3 class="name">Голодные игры</h3>
+              <p class="category">фэнтази, драма</p></a><a class="lk__list" href="film.html"><img class="img-lk" src="img/film-1.jpg">
+              <h3 class="name">Чёрная пантера</h3>
+              <p class="category">триллер</p></a><a class="lk__list" href="film.html"><img class="img-lk" src="img/film-4.jpg">
+              <h3 class="name">Лига справедливос..</h3>
+              <p class="category">документальный филмьм</p></a><a class="lk__list" href="film.html"><img class="img-lk" src="img/film-5.jpg">
+              <h3 class="name">Зои</h3>
+              <p class="category">документальный филмьм</p></a><a class="lk__list" href="film.html"><img class="img-lk" src="img/film-6.jpg">
+              <h3 class="name">Гоголь Вий</h3>
+              <p class="category">документальный филмьм</p></a><a class="lk__list" href="film.html"><img class="img-lk" src="img/film-7.jpg">
+              <h3 class="name">Безумный Макс</h3>
+              <p class="category">фэнтази, драма</p></a></section>
+        </section>
+        <section class="lk__items lk__close container" id="remind">
+          <h1 class="lk__title">Напоминания</h1>
+          <ul class="lk__sub-menu">
+            <li><a class="lk__button-menu" href="#">Фильмы</a></li>
+            <li><a class="lk__button-menu" href="#">мультфильмы</a></li>
+            <li><a class="lk__button-menu" href="#">сериалы</a></li>
+            <li><a class="lk__button-menu lk__button-menu--active" href="#">спорт</a></li>
+            <li><a class="lk__button-menu" href="#">ток-шоу</a></li>
+            <li><a class="lk__button-menu" href="#">тв онлайн</a></li>
+          </ul>
+          <form class="lk__filtrs">
+            <button class="lk__mobile">фильтр и сортировка</button>
+            <button class="lk__choice lk__nomobile">По дате премьеры</button>
+          </form>
+          <section class="lk__lists"><a class="lk__list lk__list--size" href="#"><img class="image-lk" src="img/new-2.jpg">
+              <h3 class="name">Чемпионал Европы по водному поло среди женщин 2019</h3>
+              <p class="category">21 апреля 18:00</p></a><a class="lk__list lk__list--size" href="#"><img class="image-lk" src="img/new-3.jpg">
+              <h3 class="name">Лига чемпионов 2019</h3>
+              <p class="category">25 апреля 11:30</p></a><a class="lk__list lk__list--size" href="#"><img class="image-lk" src="img/new-2.jpg">
+              <h3 class="name">Чемпионал Европы по водному поло среди женщин 2019</h3>
+              <p class="category">21 апреля 18:00</p></a><a class="lk__list lk__list--size" href="#"><img class="image-lk" src="img/new-3.jpg">
+              <h3 class="name">Лига чемпионов 2019</h3>
+              <p class="category">25 апреля 11:30</p></a></section>
+        </section>
+        <section class="lk__items lk__close container" id="viewed">
+          <h1 class="lk__title">вы смотрели</h1>
+          <ul class="lk__sub-menu">
+            <li><a class="lk__button-menu" href="#">Фильмы</a></li>
+            <li><a class="lk__button-menu" href="#">мультфильмы</a></li>
+            <li><a class="lk__button-menu" href="#">сериалы</a></li>
+            <li><a class="lk__button-menu lk__button-menu--active" href="#">спорт</a></li>
+            <li><a class="lk__button-menu" href="#">ток-шоу</a></li>
+            <li><a class="lk__button-menu" href="#">тв онлайн</a></li>
+          </ul>
+          <form class="lk__filtrs">
+            <button class="lk__mobile">фильтр и сортировка</button>
+            <button class="lk__choice lk__nomobile">По дате просмотра</button>
           </form>
           <section class="lk__lists"><a class="lk__list" href="film.html"><img class="img-lk" src="img/film-1.jpg">
               <h3 class="name">Чёрная пантера</h3>
@@ -92,6 +187,8 @@
       </footer>
     </div>
     <script type="text/javascript" src="js/jquery.min-3.4.1.js"></script>
+    <script type="text/javascript" src="js/jquery.min-migrate-1.4.1.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

@@ -114,14 +114,75 @@
   background-size: 300%;
 }
 
+.today__icon6::before {
+  background-color: #14ae40;
+  background-position: 0px 10px;
+  background-size: 250%;
+}
+
+.today__icon7::before {
+  background-color: #869a67;
+  background-position: -3px -56px;
+  background-size: 300%;
+}
+
+.today__new:hover .today__name,
+.today__new:focus .today__name,
+.today__element:hover .today__name,
+.today__element:focus .today__name {
+  color: #3538cb;
+}
+
+.today__new:hover .today__icon::after,
+.today__new:focus .today__icon::after {
+  content: "";
+  width: 234px;
+  height: 3px;
+  background: #ee3138;
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+.today__element:hover .today__icon::after,
+.today__element:focus .today__icon::after {
+  content: "";
+  width: 88px;
+  height: 3px;
+  background: #ee3138;
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+
+.today__element:hover .today__icon:nth-child(2)::after,
+.today__element:focus .today__icon:nth-child(2)::after {
+  content: "";
+  width: 21px;
+  height: 3px;
+  background: #ee3138;
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+
+
 @media (min-width: @size-tablet) {
-  .today__blocks--reverse {
+
+  .today__blocks {
     flex-direction: row-reverse;
   }
+
   .today__element:nth-child(3),
   .today__element:nth-child(4),
   .today__blocks--reverse .today__block {
     display: flex;
+  }
+
+  .today__blocks--reverse {
+    flex-direction: row;
   }
 }
 @media (min-width: @size-desktop) {
@@ -187,4 +248,5 @@
     width: 270px;
     height: 190px;
   }
+
 }
