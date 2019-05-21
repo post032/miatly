@@ -12,25 +12,29 @@
 
  .programm__list {
   margin-right: 26px;
+  outline: none;
 }
 .programms__list {
   margin-right: 9px;
+  outline: none;
 }
 
-.programm__lists p {
+.programm__lists a {
   font-size: 14px;
   font-weight: 500;
   color: rgb(153, 153, 153);
   line-height: 1.286;
   text-align: left;
+  margin: 20px 0;
 }
 
-.programm__lists p span {
+.programm__lists a span {
   color: #010101;
 }
 
 @media (min-width: @size-tablet) {
-  .programms__lists {
+  .programms__lists,
+  .programm__lists {
     margin-left: 0;
     padding-left: 13px;
   }

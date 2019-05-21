@@ -16,6 +16,12 @@ img {
 }
 a {
   text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+button {
+  outline: none;
+  cursor: pointer;
 }
 .container {
   -webkit-box-sizing: border-box;
@@ -143,7 +149,6 @@ input[type="radio"].visually-hidden {
   margin-right: 20px;
 }
 .menu__range {
-  display: none;
   -webkit-appearance: none;
   outline: none;
   position: relative;
@@ -859,6 +864,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   margin-left: 20px;
   padding-bottom: 89px;
+  outline: none;
 }
 .kub__lists {
   padding-bottom: 137px;
@@ -991,12 +997,16 @@ input[type="radio"].visually-hidden {
 }
 .talkshow__link {
   bottom: -50px;
+  outline: none;
+  cursor: pointer;
 }
 .bottom__link {
   bottom: -530px;
+  outline: none;
 }
 .select__link {
   bottom: -310px;
+  outline: none;
 }
 .text {
   display: none;
@@ -1026,10 +1036,14 @@ input[type="radio"].visually-hidden {
 }
 .slider__list {
   text-align: left;
+  outline: none;
+  cursor: pointer;
 }
 .circle__list,
 .kub__list {
   text-align: center;
+  outline: none;
+  cursor: pointer;
 }
 .header__block {
   margin: 0 20px;
@@ -1069,7 +1083,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 50px;
   position: relative;
 }
-.bookmark__list p {
+.bookmark__list a {
   font-size: 12px;
   font-weight: normal;
   color: #666666;
@@ -1081,14 +1095,14 @@ input[type="radio"].visually-hidden {
       justify-content: space-around;
   max-width: 510px;
 }
-.rating__list p {
+.rating__list a {
   font-size: 12px;
   font-weight: normal;
   color: #666666;
   line-height: 1.2;
   text-align: left;
 }
-.rating__list p span {
+.rating__list a span {
   font-weight: bold;
   color: #010101;
 }
@@ -1439,22 +1453,26 @@ input[type="radio"].visually-hidden {
 }
 .programm__list {
   margin-right: 26px;
+  outline: none;
 }
 .programms__list {
   margin-right: 9px;
+  outline: none;
 }
-.programm__lists p {
+.programm__lists a {
   font-size: 14px;
   font-weight: 500;
   color: #999999;
   line-height: 1.286;
   text-align: left;
+  margin: 20px 0;
 }
-.programm__lists p span {
+.programm__lists a span {
   color: #010101;
 }
 @media (min-width: 768px) {
-  .programms__lists {
+  .programms__lists,
+  .programm__lists {
     margin-left: 0;
     padding-left: 13px;
   }

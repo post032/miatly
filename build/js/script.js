@@ -116,10 +116,9 @@ $('.kub__lists').slick({
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerMode: true,
-        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        centerMode: false,
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -267,12 +266,12 @@ $('.lk__mobile').click(function(e){
   $('.lk__choice').toggleClass('lk__nomobile');
 });
 
-$('.menu__range[value ="0"]').change(function(){
+$('.menu__range[value ="0"]').bind(function(){
   $('.menu__range').addClass('menu__range-day');
   $('.menu__range').removeClass('menu__range-night');
 });
 
-$('.menu__range[value ="1"]').change(function(){
+$('.menu__range[value ="1"]').bind(function(){
   $('.menu__range').removeClass('menu__range-day');
   $('.menu__range').addClass('menu__range-night');
 });
