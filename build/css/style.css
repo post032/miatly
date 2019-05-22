@@ -829,7 +829,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   padding: 0;
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 1280px;
 }
 .title {
   -webkit-box-sizing: border-box;
@@ -1150,7 +1150,7 @@ input[type="radio"].visually-hidden {
     display: inline;
   }
   .title__name {
-    font-size: 24px;
+    font-size: 18px;
     color: #000000;
   }
   .rating__lists {
@@ -1263,7 +1263,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   padding: 0;
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 1280px;
 }
 .mult {
   -webkit-box-sizing: border-box;
@@ -1271,7 +1271,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   padding: 0;
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 1280px;
 }
 .about-us {
   -webkit-box-sizing: border-box;
@@ -1329,7 +1329,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 104px;
   padding: 0;
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 1280px;
 }
 .sport__blocks {
   display: -webkit-box;
@@ -1431,12 +1431,16 @@ input[type="radio"].visually-hidden {
   position: relative;
   padding: 0;
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 1280px;
 }
 .selections .slider__lists .slider__list {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+.slider__list:hover .name,
+.slider__list:focus .name {
+  color: #3538cb;
 }
 .programms {
   -webkit-box-sizing: border-box;
@@ -1739,7 +1743,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   padding: 0;
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 1280px;
 }
 .min-menu {
   -webkit-box-sizing: border-box;
@@ -3066,7 +3070,7 @@ input[type="radio"].visually-hidden {
   background-position: -103px -10px;
 }
 .lk__title {
-  font-size: 30px;
+  font-size: 18px;
   font-weight: 900;
   color: #010101;
   text-transform: uppercase;
