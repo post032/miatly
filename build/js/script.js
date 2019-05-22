@@ -280,3 +280,13 @@ $('.lk__click').click(function(e){
   e.preventDefault();
   $('.lk__buttons').toggleClass('lk__buttons--none');
 });
+
+$(window).on('load resize', function() {
+  if ($(window).width() < 768) {
+    $('.button__mobile').click(function(e){
+      $('.button__serie').toggleClass('show');
+    });
+  } else {
+    $('.button__serie').removeClass('show');
+  }
+});
