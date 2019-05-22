@@ -3124,7 +3124,7 @@ input[type="radio"].visually-hidden {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.lk__choice::after {
+.lk__click::after {
   content: "";
   display: inline-block;
   width: 10px;
@@ -3276,6 +3276,18 @@ input[type="radio"].visually-hidden {
   background: none;
   outline: none;
   cursor: pointer;
+}
+.lk__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.lk__buttons--none {
+  display: none;
 }
 @media (min-width: 768px) {
   .lk__name {

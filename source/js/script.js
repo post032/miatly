@@ -275,3 +275,8 @@ $('.menu__range[value ="1"]').bind(function(){
   $('.menu__range').removeClass('menu__range-day');
   $('.menu__range').addClass('menu__range-night');
 });
+
+$('.lk__click').click(function(e){
+  e.preventDefault();
+  $('.lk__buttons').toggleClass('lk__buttons--none');
+});

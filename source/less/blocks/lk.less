@@ -144,10 +144,9 @@
   width: 270px;
   min-height: 40px;
   justify-content: center;
-  // align-items: center;
 }
 
-.lk__choice::after {
+.lk__click::after {
   content: "";
   display: inline-block;
   width: 10px;
@@ -308,6 +307,16 @@
   outline: none;
   cursor: pointer;
 }
+
+.lk__buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.lk__buttons--none {
+  display: none;
+}
+
 @media (min-width: @size-tablet) {
   .lk__name {
     font-size: 18px;
