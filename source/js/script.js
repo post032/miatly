@@ -1,10 +1,24 @@
 $(window).on('load resize', function() {
   if ($(window).width() >= 768) {
     $('.banner__limit:not(.slick-initialized)').slick({
-      centerMode: true,
       infinite: true,
       speed: 300,
+      centerMode: true,
       slidesToShow: 1,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            centerMode: false,
+            slidesToScroll: 1,
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
     });
   } else {
     $(".banner__limit.slick-initialized").slick("unslick");
@@ -52,9 +66,17 @@ $('.circle__lists').slick({
   infinite: true,
   centerMode: true,
   speed: 300,
-  slidesToShow: 6,
-  slidesToScroll: 6,
+  slidesToShow: 7,
+  slidesToScroll: 7,
   responsive: [
+    {
+      breakpoint: 1400,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 6,
+        centerMode: true,
+      }
+    },
     {
       breakpoint: 1024,
       settings: {
@@ -89,18 +111,32 @@ $('.circle__lists').slick({
 });
 
 $('.kub__lists').slick({
-  infinite: true,
   centerMode: true,
   speed: 300,
-  slidesToShow: 6,
-  slidesToScroll: 6,
+  slidesToShow: 7,
+  slidesToScroll: 7,
   responsive: [
+    {
+      breakpoint: 1400,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 6,
+        centerMode: true,
+      }
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        centerMode: true,
+      }
+    },
     {
       breakpoint: 1024,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
-        infinite: true,
         centerMode: true,
       }
     },
@@ -110,15 +146,14 @@ $('.kub__lists').slick({
         slidesToShow: 2,
         slidesToScroll: 2,
         centerMode: true,
-        infinite: true,
       }
     },
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        centerMode: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -266,12 +301,12 @@ $('.lk__mobile').click(function(e){
   $('.lk__choice').toggleClass('lk__nomobile');
 });
 
-$('.menu__range[value ="0"]').bind(function(){
+$('.menu__range[value ="0"]').onchange(function(){
   $('.menu__range').addClass('menu__range-day');
   $('.menu__range').removeClass('menu__range-night');
 });
 
-$('.menu__range[value ="1"]').bind(function(){
+$('.menu__range[value ="1"]').onchange(function(){
   $('.menu__range').removeClass('menu__range-day');
   $('.menu__range').addClass('menu__range-night');
 });
@@ -284,9 +319,9 @@ $('.lk__click').click(function(e){
 $(window).on('load resize', function() {
   if ($(window).width() < 768) {
     $('.button__mobile').click(function(e){
-      $('.button__serie').toggleClass('show');
+      $('.button__serie').toggleClass('show__serie');
     });
   } else {
-    $('.button__serie').removeClass('show');
+    $('.button__serie').removeClass('show__serie');
   }
 });

@@ -56,16 +56,23 @@
 
 .cinema__list {
   margin-bottom: 68px;
-  margin-right: 20px;
   position: relative;
+  padding-right: 15px;
+  padding-top: 15px;
 }
 
-.cinema__list:hover .img-kub,
-.cinema__list:focus .img-kub {
-  transition: 1s;
-  width: 180px;
-  height: 264px;
+.cinema__list:hover,
+ .cinema__list:focus {
+  padding-right: 9px;
+  padding-top: 9px;
 }
+
+// .cinema__list:hover .img-kub,
+// .cinema__list:focus .img-kub {
+//   width: 135px;
+//   height: 195px;
+//   box-sizing: border-box;
+// }
 
 .cinema__list:hover .name,
 .cinema__list:focus .name {
@@ -82,7 +89,7 @@
   background-position: -50px 10px;
   background-repeat: no-repeat;
   position: absolute;
-  top: -23px;
+  top: -6px;
   right: 10px;
 }
 
@@ -154,6 +161,13 @@
   width: 150px;
   height: 220px;
 }
+
+.cinema__list:hover .img-kub,
+ .cinema__list:focus .img-kub {
+  width: 155px;
+  height: 225px;
+  box-sizing: border-box;
+}
 }
 
 @media (min-width: @size-tablet) {
@@ -174,7 +188,7 @@
 }
 @media (min-width: @size-desktop) {
   .cinema__lists {
-    align-items: baseline;
+    align-items: center;
     margin: 0;
   }
 
