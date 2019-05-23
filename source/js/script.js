@@ -1,28 +1,49 @@
-$(window).on('load resize', function() {
-  if ($(window).width() >= 768) {
-    $('.banner__limit:not(.slick-initialized)').slick({
-      infinite: true,
-      speed: 300,
-      centerMode: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 1,
-            centerMode: false,
-            slidesToScroll: 1,
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-    });
-  } else {
-    $(".banner__limit.slick-initialized").slick("unslick");
-  }
+// $(window).on('load resize', function() {
+//   if ($(window).width() >= 768) {
+//     $('.banner__limit:not(.slick-initialized)').slick({
+//       infinite: true,
+//       speed: 300,
+//       centerMode: true,
+//       slidesToShow: 1,
+//       slidesToScroll: 1,
+//       responsive: [
+//         {
+//           breakpoint: 1024,
+//           settings: {
+//             slidesToShow: 1,
+//             centerMode: false,
+//             slidesToScroll: 1,
+//           }
+//         }
+//         // You can unslick at a given breakpoint now by adding:
+//         // settings: "unslick"
+//         // instead of a settings object
+//       ]
+//     });
+//   } else {
+//     $(".banner__limit.slick-initialized").slick("unslick");
+//   }
+// });
+
+$('.banner__limit').slick({
+
+  speed: 300,
+  centerMode: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        centerMode: false,
+        slidesToScroll: 1,
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });
 
 $(window).on('load resize', function() {

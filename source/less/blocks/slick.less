@@ -63,9 +63,7 @@
   border-left: 2px solid #000000;
 }
 
-.banner .slick-slide {
-    margin: 0 12px;
-}
+
 
 @media (min-width: 360px) {
 .opinion__lists .slick-prev {
@@ -177,11 +175,11 @@
   }
 
   .banner__limit .slick-prev {
-    left: 80px;
+    left: -50px;
   }
 
   .banner__limit .slick-next {
-    right: 100px;
+    right: -50px;
   }
 
 
@@ -197,9 +195,9 @@
     right: 0;
   }
 
-  .banner__limit .slick-next {
-    right: 100px;
-  }
+  // .banner__limit .slick-next {
+  // //   right: 100px;
+  // // }
   .talkshow__slider .slick-next,
   .sport-page__slider .slick-next,
   .slider__lists .slick-next,
@@ -348,6 +346,10 @@ height: 70px;
 @media (min-width: @size-tablet) {
   .banner__limit .slick-prev {
     left: 10px;
+  }
+
+  .banner .slick-slide {
+      margin: 0 12px;
   }
 
   .banner__limit .slick-next {

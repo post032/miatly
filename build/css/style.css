@@ -449,10 +449,12 @@ input[type="radio"].visually-hidden {
   margin-top: 17px;
   padding: 0;
   margin: 0 auto;
-  max-width: 1290px;
+  max-width: 1295px;
   padding-bottom: 20px;
 }
 .banner__item {
+  min-width: 320px;
+  height: 250px;
   position: relative;
 }
 .banner__limit {
@@ -460,10 +462,20 @@ input[type="radio"].visually-hidden {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.banner__item img {
-  width: 820px;
-  height: 250px;
-  margin: 0 4px;
+.banner__bg1 {
+  background: url("../img/banner-any.jpg") no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.banner__bg2 {
+  background: url("../img/banner-face.jpg") no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.banner__bg3 {
+  background: url("../img/banner-mary.jpg") no-repeat;
+  background-size: cover;
+  background-position: top center;
 }
 .banner__play {
   background-color: #43bb54;
@@ -507,16 +519,11 @@ input[type="radio"].visually-hidden {
   .banner {
     padding: 0;
   }
+  .banner__item {
+    height: 360px;
+  }
 }
 @media (min-width: 1170px) {
-  .banner__item img {
-    width: 1170px;
-    height: 360px;
-  }
-  .banner__item {
-    width: 1170px;
-    height: 360px;
-  }
   .banner__play {
     top: 200px;
   }
@@ -587,9 +594,6 @@ input[type="radio"].visually-hidden {
           transform: rotate(135deg);
   border-top: 2px solid #000000;
   border-left: 2px solid #000000;
-}
-.banner .slick-slide {
-  margin: 0 12px;
 }
 @media (min-width: 360px) {
   .opinion__lists .slick-prev {
@@ -688,10 +692,10 @@ input[type="radio"].visually-hidden {
   left: -20px;
 }
 .banner__limit .slick-prev {
-  left: 80px;
+  left: -50px;
 }
 .banner__limit .slick-next {
-  right: 100px;
+  right: -50px;
 }
 .talkshow__slider .slick-prev,
 .sport-page__slider .slick-prev,
@@ -702,9 +706,6 @@ input[type="radio"].visually-hidden {
 }
 .programms__lists .slick-next {
   right: 0;
-}
-.banner__limit .slick-next {
-  right: 100px;
 }
 .talkshow__slider .slick-next,
 .sport-page__slider .slick-next,
@@ -852,6 +853,9 @@ input[type="radio"].visually-hidden {
 @media (min-width: 768px) {
   .banner__limit .slick-prev {
     left: 10px;
+  }
+  .banner .slick-slide {
+    margin: 0 12px;
   }
   .banner__limit .slick-next {
     right: 40px;

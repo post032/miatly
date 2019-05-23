@@ -5,11 +5,13 @@
   margin-top: 17px;
   padding: 0;
   margin: 0 auto;
-  max-width: 1290px;
+  max-width: 1295px;
   padding-bottom: 20px;
 }
 
 .banner__item {
+  min-width: 320px;
+  height: 250px;
   position: relative;
 }
 
@@ -17,11 +19,29 @@
   justify-content: center;
 }
 
-.banner__item img {
-  width: 820px;
-  height: 250px;
-  margin: 0 4px;
+.banner__bg1 {
+  background: url("../img/banner-any.jpg") no-repeat;
+  background-size: cover;
+  background-position: top center;
 }
+
+.banner__bg2 {
+  background: url("../img/banner-face.jpg") no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.banner__bg3 {
+  background: url("../img/banner-mary.jpg") no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+// .banner__item img {
+//   width: 820px;
+//   height: 250px;
+//   margin: 0 4px;
+// }
 
 .banner__play {
   background-color: rgb(67, 187, 84);
@@ -64,16 +84,14 @@
   .banner {
     padding: 0;
   }
-}
-@media (min-width: @size-desktop) {
-  .banner__item img {
-    width: 1170px;
+
+  .banner__item {
     height: 360px;
   }
-.banner__item {
-  width: 1170px;
-  height: 360px;
 }
+@media (min-width: @size-desktop) {
+
+
   .banner__play {
     top: 200px;
   }
