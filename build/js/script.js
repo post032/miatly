@@ -91,18 +91,10 @@ $('.circle__lists').slick({
   slidesToScroll: 7,
   responsive: [
     {
-      breakpoint: 1400,
+      breakpoint: 1024,
       settings: {
         slidesToShow: 6,
         slidesToScroll: 6,
-        centerMode: true,
-      }
-    },
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 5,
-        slidesToScroll: 5,
         infinite: true,
         centerMode: true,
       }
@@ -110,8 +102,8 @@ $('.circle__lists').slick({
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToShow: 5,
+        slidesToScroll: 5,
         centerMode: true,
         infinite: true,
       }
@@ -119,10 +111,9 @@ $('.circle__lists').slick({
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        centerMode: true,
-        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        centerMode: false,
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -133,6 +124,7 @@ $('.circle__lists').slick({
 
 $('.kub__lists').slick({
   centerMode: true,
+  infinite: true,
   speed: 300,
   slidesToShow: 7,
   slidesToScroll: 7,
@@ -178,9 +170,10 @@ $('.kub__lists').slick({
       }
     },
     {
-      breakpoint: 420,
+      breakpoint: 320,
       settings: {
         slidesToShow: 2,
+        infinite: false,
         slidesToScroll: 2,
         centerMode: false,
       }
@@ -219,9 +212,9 @@ $('.slider__lists').slick({
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerMode: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        centerMode: false,
         infinite: true,
       }
     }
@@ -330,15 +323,15 @@ $('.lk__mobile').click(function(e){
   $('.lk__choice').toggleClass('lk__nomobile');
 });
 
-$('.menu__range[value ="0"]').onchange(function(){
-  $('.menu__range').addClass('menu__range-day');
-  $('.menu__range').removeClass('menu__range-night');
-});
-
-$('.menu__range[value ="1"]').onchange(function(){
-  $('.menu__range').removeClass('menu__range-day');
-  $('.menu__range').addClass('menu__range-night');
-});
+// $('.menu__range[value ="0"]').onchange(function(){
+//   $('.menu__range').addClass('menu__range-day');
+//   $('.menu__range').removeClass('menu__range-night');
+// });
+//
+// $('.menu__range[value ="1"]').onchange(function(){
+//   $('.menu__range').removeClass('menu__range-day');
+//   $('.menu__range').addClass('menu__range-night');
+// });
 
 $('.lk__click').click(function(e){
   e.preventDefault();
@@ -348,6 +341,7 @@ $('.lk__click').click(function(e){
 $(window).on('load resize', function() {
   if ($(window).width() < 768) {
     $('.button__mobile').click(function(e){
+      e.preventDefault();
       $('.button__serie').toggleClass('show__serie');
     });
   } else {

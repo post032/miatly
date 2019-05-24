@@ -3,6 +3,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  padding-top: 30px;
 }
 
 .bg {
@@ -17,8 +18,8 @@
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
-  margin-top: 69px;
-  margin-bottom: 56px;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 
@@ -27,16 +28,37 @@
 .kub__lists {
   display: flex;
   margin-left: 20px;
-  padding-bottom: 89px;
   outline: none;
 }
 
-.kub__lists {
-  padding-bottom: 137px;
+.popular .circle__lists {
+  padding-bottom: 50px;
+}
+.serial .circle__lists,
+.films .circle__lists {
+  padding-bottom: 40px;
 }
 
-.kub__list {
-  padding: 0 10px;
+.slider__lists .slick-slide {
+  width: 207px!important;
+margin-left: 5px;
+}
+
+.slider__lists {
+  padding-bottom: 100px;
+}
+
+.sport .bottom__link {
+  bottom: 495px;
+}
+
+// .kub__lists {
+//   padding-bottom: 137px;
+// }
+.circle__lists .slick-slide,
+.kub__lists .slick-slide {
+  width: 130px!important;
+margin-left: 5px;
 }
 
 .wrapper {
@@ -59,7 +81,6 @@
   line-height: 1.2;
   text-align: center;
   margin-bottom: 0;
-  // min-height: 28px;
 }
 
 .name:hover,
@@ -67,48 +88,6 @@
   cursor: pointer;
   color: #1e46db;
 }
-
-.circle__list:hover .name,
-.circle__list:focus .name {
-  color: #1e46db;
-}
-
-.circle__list:hover .underline::after,
-.circle__list:focus .underline::after {
-  content: "смотреть";
-  border-radius: 50%;
-  width: 100px;
-  height:100px;
-  position: absolute;
-  font-size: 14px;
-  font-weight: 500;
-  color: rgb(255, 255, 255);
-  line-height: 1.2;
-  text-align: center;
-  position: absolute;
-  z-index: 10px;
-  background: rgba(0,0,0,0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.circle__list:hover .underline::before,
-.circle__list:focus .underline::before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-left: 10px solid #fff;
-  position: absolute;
-  z-index: 10;
-  left: 10px;
-
-}
-
-
-
 
 .category {
   font-size: 11px;
@@ -119,7 +98,6 @@
   margin: 0;
   margin-top: 6px;
   margin-bottom: 6px;
-  // min-height: 26px;
 }
 
 .mark {
@@ -148,21 +126,14 @@
   position: relative;
 }
 
-.circle__list:hover .underline,
-.circle__list:focus .underline {
-  border: 4px solid red;
-  border-left-color: transparent;
-  border-bottom-color: transparent;
-  z-index: 2;
-}
 
 .all__link {
   display: block;
   position: absolute;
-  bottom: -560px;
+  bottom: -525px;
   right: 50%;
   transform: translateX(50%);
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 1.2;
   color: rgb(0, 0, 0);
@@ -172,6 +143,8 @@
 .all__link:focus {
   color: #3538cb;
 }
+
+
 
 .talkshow__link {
   bottom: -50px;
@@ -183,6 +156,8 @@
   bottom: -530px;
   outline: none;
 }
+
+
 
 .select__link {
   bottom: -310px;
@@ -227,6 +202,11 @@
   outline: none;
   cursor: pointer;
   // min-height: 195px;
+}
+
+.kub__list {
+  padding-bottom: 40px;
+  margin-bottom: 70px;
 }
 
 
@@ -326,10 +306,23 @@
 
 
 @media (min-width: @size-tablet) {
+  .slider__lists {
+    padding-bottom: 74px;
+  }
+
+  .circle__lists .slick-slide {
+    margin-left: 20px;
+  }
+  .kub__lists .slick-slide {
+  margin-left: 10px;
+  }
+
   .no-mobile__text {
     display: inline;
   }
   .title__name {
+    margin-top: 70px;
+    margin-bottom: 45px;
     font-size: 18px;
     color: rgb(0, 0, 0);
   }
@@ -347,7 +340,8 @@
   }
 
   .all__link {
-    top: 74px;
+    font-size: 16px;
+    top: 95px;
     right: 200px;
     bottom: 0;
   }
@@ -358,7 +352,7 @@
   }
 
   .kub__list {
-    width: 170px;
+    width: 130px;
     position: relative;
   }
 
@@ -378,6 +372,10 @@
     margin-left: 0;
   }
 
+  .popular .circle__lists {
+    padding-bottom: 89px;
+  }
+
   .bookmark__lists {
     flex-direction: row;
     justify-content: flex-start;
@@ -391,45 +389,30 @@
       height: 110px;
     }
 
-    .circle__list:hover .underline,
-    .circle__list:focus .underline {
-      width: 110px;
-      height: 110px;
-    }
 
-      .kub__list:hover .img-kub,
-      .kub__list:focus .img-kub {
-          width: 180px;
-          height: 264px;
-      }
-
-      .kub__list:hover::before ,
-      .kub__list:focus::before {
-        content: "";
-        display: block;
-        width: 30px;
-        height: 50px;
-        background-image: url("../img/css-sprite.png");
-        background-position: -50px 10px;
-        background-repeat: no-repeat;
-        position: absolute;
-        top: -20px;
-        right: 40px;;
-      }
-
-      .kub__list:hover .name,
-      .kub__list:focus .name {
-          color: #1e46db;
-      }
       .kub__list div {
         width: 100%;
       }
 }
 @media (min-width: @size-desktop) {
+  .talkshow__slider .slick-slide,
+  .sport-page__slider .slick-slide,
+  .slider__lists .slick-slide {
+    width: 270px!important;
+  margin-left: 30px;
+  }
   .text {
     display: block;
   }
 
+  .kub__list {
+    width: 170px;
+  }
+  .circle__lists .slick-slide,
+  .kub__lists .slick-slide {
+      width: 180px!important;
+      margin-left: 30px;
+    }
 
   .header__block {
     margin-left: 0;
@@ -447,5 +430,83 @@
     font-size: 14px;
     font-weight: normal;
   }
+
+  .circle__list:hover .underline,
+  .circle__list:focus .underline {
+    width: 110px;
+    height: 110px;
+  }
+
+    .kub__list:hover .img-kub,
+    .kub__list:focus .img-kub {
+        width: 180px;
+        height: 264px;
+    }
+
+    .kub__list:hover::before ,
+    .kub__list:focus::before {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 50px;
+      background-image: url("../img/css-sprite.png");
+      background-position: -50px 10px;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -20px;
+      right: 40px;;
+    }
+
+    .kub__list:hover .name,
+    .kub__list:focus .name {
+        color: #1e46db;
+    }
+
+  .circle__list:hover .name,
+  .circle__list:focus .name {
+    color: #1e46db;
+  }
+
+  .circle__list:hover .underline::after,
+  .circle__list:focus .underline::after {
+    content: "смотреть";
+    border-radius: 50%;
+    width: 100px;
+    height:100px;
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    position: absolute;
+    z-index: 10px;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle__list:hover .underline::before,
+  .circle__list:focus .underline::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-left: 10px solid #fff;
+    position: absolute;
+    z-index: 10;
+    left: 10px;
+  }
+
+  .circle__list:hover .underline,
+  .circle__list:focus .underline {
+    border: 4px solid red;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    z-index: 2;
+  }
+
 
 }

@@ -15,9 +15,12 @@
       align-items: flex-start;
     }
 
-
-.slick-list .draggable {
+.circle__lists .slick-list,
+.kub__lists .slick-list {
   padding-left: 0;
+}
+.slick-track {
+  display: flex;
 }
 
 .opinion__lists .slick-prev,
@@ -136,8 +139,10 @@
   left: 780px;
 }
 }
+
+@media (min-width: @size-tablet) {
   .slick-list .draggable {
-    paddin: 0 50px;
+    paddin: 0;
   }
   .banner__limit .slick-prev,
   .banner__limit .slick-next {
@@ -175,11 +180,11 @@
   }
 
   .banner__limit .slick-prev {
-    left: -50px;
+    left: 10px;
   }
 
   .banner__limit .slick-next {
-    right: -50px;
+    right: 40px;
   }
 
 
@@ -218,8 +223,8 @@
   .circle__lists .slick-next::after {
     content: "";
     display: block;
-    width: 30px;
-height: 70px;
+    width: 50px;
+    height: 100px;
     background-color: #f1f1f1;
     position: absolute;
     top: -27px;
@@ -288,7 +293,7 @@ height: 70px;
     border-left: 2px solid #4d4d4d;
       -webkit-font-smoothing: antialiased;
       position: absolute;
-      top: 7px;
+      top: 0;
       -moz-osx-font-smoothing: grayscale;
       outline: none;
       z-index: 101;
@@ -305,8 +310,8 @@ height: 70px;
   .circle__lists .slick-next:before {
     content: "";
     display: block;
-    width: 16px;
-    height: 16px;
+    width: 26px;
+    height: 26px;
     border-top: 1px solid rgb(42, 46, 63);
     border-left: 1px solid rgb(42, 46, 63);
       -webkit-font-smoothing: antialiased;
@@ -343,47 +348,10 @@ height: 70px;
     transform: rotate(135deg);
   }
 
-@media (min-width: @size-tablet) {
-  .banner__limit .slick-prev {
-    left: 10px;
-  }
-
   .banner .slick-slide {
       margin: 0 12px;
   }
 
-  .banner__limit .slick-next {
-    right: 40px;
-  }
-  .talkshow__slider .slick-prev::after,
-  .talkshow__slider .slick-next::after,
-  .sport-page__slider .slick-prev::after,
-  .sport-page__slider .slick-next::after,
-  .slider__lists .slick-prev::after,
-  .slider__lists .slick-next::after,
-  .kub__lists .slick-prev::after,
-  .kub__lists .slick-next::after,
-  .circle__lists .slick-prev::after,
-  .circle__lists .slick-next::after {
-    width: 50px;
-    height: 100px;
-  }
-
-  .talkshow__slider .slick-prev::before,
-  .talkshow__slider .slick-next::before,
-  .sport-page__slider .slick-prev::before,
-  .sport-page__slider .slick-next::before,
-  .slider__lists .slick-prev:before,
-  .slider__lists .slick-next:before,
-  .kub__lists .slick-prev:before,
-  .kub__lists .slick-next:before,
-  .circle__lists .slick-prev:before,
-  .circle__lists .slick-next:before {
-    content: "";
-    display: block;
-    width: 26px;
-    height: 26px;
-}
 .banner__limit .slick-prev,
 .banner__limit .slick-next {
   position: absolute;
