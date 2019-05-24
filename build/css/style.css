@@ -1207,8 +1207,19 @@ input[type="radio"].visually-hidden {
   .slider__lists {
     padding-bottom: 74px;
   }
+  .films .title__name {
+    margin-top: 70px;
+    margin-bottom: 52px;
+  }
+  .popular .title__name {
+    margin-top: 20px;
+  }
   .circle__lists .slick-slide {
     margin-left: 20px;
+  }
+  .programms .title__name {
+    margin-top: 70px;
+    margin-bottom: 50px;
   }
   .kub__lists .slick-slide {
     margin-left: 10px;
@@ -1216,11 +1227,22 @@ input[type="radio"].visually-hidden {
   .no-mobile__text {
     display: inline;
   }
+  .serial .title__name,
   .title__name {
     margin-top: 70px;
     margin-bottom: 45px;
     font-size: 18px;
     color: #000000;
+  }
+  .show .title__name,
+  .sport .title__name {
+    margin-bottom: 67px;
+  }
+  .serial .title__name {
+    margin-bottom: 65px;
+  }
+  .mult .title__name {
+    margin-bottom: 70px;
   }
   .rating__lists {
     -webkit-box-pack: justify;
@@ -1239,7 +1261,7 @@ input[type="radio"].visually-hidden {
   }
   .all__link {
     font-size: 16px;
-    top: 44px;
+    top: 68px;
     right: 200px;
     bottom: 0;
   }
@@ -1251,8 +1273,24 @@ input[type="radio"].visually-hidden {
     position: relative;
   }
   .circle__list {
-    width: 100px;
+    width: 170px;
     position: relative;
+  }
+  .circle__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 220px;
   }
   .category {
     font-size: 12px;
@@ -1265,7 +1303,10 @@ input[type="radio"].visually-hidden {
     margin-left: 0;
   }
   .popular .circle__lists {
-    padding-bottom: 89px;
+    padding-bottom: 96px;
+  }
+  .serial .kub__lists {
+    padding-bottom: 15px;
   }
   .bookmark__lists {
     -webkit-box-orient: horizontal;
@@ -1286,8 +1327,22 @@ input[type="radio"].visually-hidden {
   .kub__list div {
     width: 100%;
   }
+  .mult .circle__lists,
+  .serial .circle__lists {
+    margin-bottom: 63px;
+  }
+  .films .circle__lists {
+    margin-bottom: 82px;
+  }
+  .sport .circle__lists {
+    margin-bottom: 70px;
+  }
 }
 @media (min-width: 1170px) {
+  .kub__list .category,
+  .kub__list .name {
+    text-align: center;
+  }
   .slider__lists .slick-slide,
   .sport-page__slider .slick-slide,
   .talkshow__slider .slick-slide {
@@ -1402,6 +1457,11 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   max-width: 100%;
 }
+@media (min-width: 768px) {
+  .films {
+    padding-bottom: 40px;
+  }
+}
 .mult {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1409,6 +1469,11 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0 auto;
   max-width: 100%;
+}
+@media (min-width: 768px) {
+  .mult {
+    padding-bottom: 40px;
+  }
 }
 .about-us {
   -webkit-box-sizing: border-box;
@@ -1438,25 +1503,18 @@ input[type="radio"].visually-hidden {
   margin-right: 20px;
 }
 @media (min-width: 768px) {
+  .about-us {
+    padding-bottom: 50px;
+  }
   .about-us__title {
     font-size: 18px;
     color: #010101;
     text-align: left;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-top: 70px;
   }
   .about-us__text {
     font-size: 14px;
     line-height: 1.571;
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-}
-@media (min-width: 1170px) {
-  .about-us__text,
-  .about-us__title {
-    margin-left: 100px;
-    margin-right: 100px;
   }
 }
 .sport {
@@ -1548,6 +1606,9 @@ input[type="radio"].visually-hidden {
     margin-left: 0;
   }
   .sport__block {
+    margin-bottom: 80px;
+  }
+  .sport__block {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: justify;
@@ -1573,7 +1634,7 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: 768px) {
   .show {
-    padding-bottom: 20px;
+    padding-bottom: 23px;
   }
 }
 @media (min-width: 1170px) {
@@ -1647,6 +1708,9 @@ input[type="radio"].visually-hidden {
     margin-left: 0;
     padding-left: 13px;
   }
+  .programms {
+    padding-bottom: 16px;
+  }
 }
 .footer {
   -webkit-box-sizing: border-box;
@@ -1710,10 +1774,14 @@ input[type="radio"].visually-hidden {
     border-top: 1px solid #f1f1f1;
   }
   .footer__social {
-    margin-right: 100px;
+    margin-right: 0;
   }
   .footer__menu {
-    margin-left: 100px;
+    margin-left: 0;
+  }
+  .footer__menu,
+  .footer__social {
+    margin-top: 33px;
   }
   .footer__menu {
     border-top: none;

@@ -343,8 +343,22 @@
     padding-bottom: 74px;
   }
 
+  .films .title__name {
+    margin-top: 70px;
+    margin-bottom: 52px;
+  }
+
+  .popular .title__name {
+    margin-top: 20px;
+  }
+
   .circle__lists .slick-slide {
     margin-left: 20px;
+  }
+
+  .programms .title__name {
+    margin-top: 70px;
+    margin-bottom: 50px;
   }
 
   .kub__lists .slick-slide {
@@ -355,11 +369,25 @@
     display: inline;
   }
 
+  .serial .title__name,
   .title__name {
     margin-top: 70px;
     margin-bottom: 45px;
     font-size: 18px;
     color: rgb(0, 0, 0);
+  }
+
+  .show .title__name,
+  .sport .title__name {
+    margin-bottom: 67px;
+  }
+
+  .serial .title__name {
+    margin-bottom: 65px;
+  }
+
+  .mult .title__name {
+    margin-bottom: 70px;
   }
 
   .rating__lists {
@@ -376,7 +404,7 @@
 
   .all__link {
     font-size: 16px;
-    top: 44px;
+    top: 68px;
     right: 200px;
     bottom: 0;
   }
@@ -391,8 +419,18 @@
   }
 
   .circle__list {
-    width: 100px;
+    width: 170px;
     position: relative;
+  }
+
+  .circle__list {
+    // width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 220px;
+    // margin-bottom: 50px;
   }
 
   .category {
@@ -408,7 +446,11 @@
   }
 
   .popular .circle__lists {
-    padding-bottom: 89px;
+    padding-bottom: 96px;
+  }
+
+  .serial .kub__lists {
+    padding-bottom: 15px;
   }
 
   .bookmark__lists {
@@ -428,8 +470,26 @@
   .kub__list div {
     width: 100%;
   }
+
+  .mult .circle__lists,
+  .serial .circle__lists {
+    margin-bottom: 63px;
+  }
+
+  .films .circle__lists {
+    margin-bottom: 82px;
+  }
+
+  .sport .circle__lists {
+    margin-bottom: 70px;
+  }
 }
 @media (min-width: @size-desktop) {
+  .kub__list .category,
+  .kub__list .name {
+    text-align: center;
+  }
+
   .slider__lists .slick-slide,
   .sport-page__slider .slick-slide,
   .talkshow__slider .slick-slide {
