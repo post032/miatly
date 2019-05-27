@@ -26,13 +26,18 @@
 .today__element {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .today__element:nth-child(3),
 .today__element:nth-child(4),
 .today__blocks--reverse .today__block {
   display: none;
+}
+
+.today .header__block {
+  margin-bottom: 34px;
+  margin-top: 40px;
 }
 
 @media (min-width: 360px) {
@@ -183,6 +188,10 @@
 
   .today__blocks--reverse {
     flex-direction: row;
+  }
+
+  .today__blocks {
+    margin-bottom: 30px;
   }
 }
 @media (min-width: @size-desktop) {

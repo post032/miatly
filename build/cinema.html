@@ -80,7 +80,7 @@
     <main>
       <section class="banner">
         <div class="wrapper">
-          <div class="banner__limit limit">
+          <div class="banner__limit">
             <div class="banner__item banner__bg1">
               <button class="banner__play" type="button"> <span>Смотреть</span></button>
             </div>
@@ -117,37 +117,61 @@
             </div>
           </div>
           <button class="cinema__sort" type="button">фильтр и сортировка</button>
-          <div class="cinema__select cinema__hide">
-            <select>
-              <option>Все жанры</option>
-              <option>Ужасы</option>
-              <option>Фэнтази</option>
-              <option>Приключения</option>
-              <option>Драма</option>
-              <option>Документальное </option>
-            </select>
-            <select>
-              <option>Все годы</option>
-              <option>2019</option>
-              <option>2018</option>
-              <option>2017</option>
-              <option>2016</option>
-              <option>2015</option>
-              <option>2014</option>
-              <option>2013</option>
-            </select>
-            <select>
-              <option>Все страны</option>
-              <option>Россия</option>
-              <option>Англия</option>
-              <option>Бельгия</option>
-              <option>Япония</option>
-            </select>
-            <select>
-              <option>Сначала новые</option>
-            </select>
+          <section class="cinema__select cinema__hide">
+            <div class="cinema__select-block">
+              <div id="style-click">
+                <input class="cinema__head-input cinema__head-input1" type="text" value="Все жанры" disabled id="style">
+              </div>
+              <div class="cinema__argument cinema__argument1 cinema__argument--show" id="style-show">
+                <button class="cinema__argument-input cinema__argument-input--active" type="button" value="Все жанры">Все жанры</button>
+                <button class="cinema__argument-input" type="button" value="Ужасы">Ужасы</button>
+                <button class="cinema__argument-input" type="button" value="Фэнтази">Фэнтази</button>
+                <button class="cinema__argument-input" type="button" value="Приключения">Приключения</button>
+                <button class="cinema__argument-input" type="button" value="Драма">Драма</button>
+                <button class="cinema__argument-input" type="button" value="Документальное">Документальное</button>
+              </div>
+            </div>
+            <div class="cinema__select-block">
+              <div id="year-click">
+                <input class="cinema__head-input cinema__head-input2" type="text" value="Все годы" disabled id="year">
+              </div>
+              <div class="cinema__argument cinema__argument2 cinema__argument--show" id="year-show">
+                <button class="cinema__argument-input cinema__argument-input--active" type="button" value="Все годы" disabled>Все годы</button>
+                <button class="cinema__argument-input" type="button" value="2019">2019</button>
+                <button class="cinema__argument-input" type="button" value="2018">2018</button>
+                <button class="cinema__argument-input" type="button" value="2017">2017</button>
+                <button class="cinema__argument-input" type="button" value="2016">2016</button>
+                <button class="cinema__argument-input" type="button" value="2015">2015</button>
+                <button class="cinema__argument-input" type="button" value="2014">2014</button>
+                <button class="cinema__argument-input" type="button" value="2013">2013</button>
+                <button class="cinema__argument-input" type="button" value="2012">2012</button>
+                <button class="cinema__argument-input" type="button" value="2011">2011</button>
+                <button class="cinema__argument-input" type="button" value="2010">2010</button>
+                <button class="cinema__argument-input" type="button" value="2009">2009</button>
+              </div>
+            </div>
+            <div class="cinema__select-block">
+              <div id="country-click">
+                <input class="cinema__head-input cinema__head-input3" type="text" value="Все страны" disabled id="country">
+              </div>
+              <div class="cinema__argument cinema__argument3 cinema__argument--show" id="country-show">
+                <button class="cinema__argument-input cinema__argument-input--active" type="button" value="Все страны">Все страны</button>
+                <button class="cinema__argument-input" type="button" value="Россия">Россия</button>
+                <button class="cinema__argument-input" type="button" value="Англия">Англия</button>
+                <button class="cinema__argument-input" type="button" value="Бельгия">Бельгия</button>
+                <button class="cinema__argument-input" type="button" value="Япония">Япония</button>
+              </div>
+            </div>
+            <div class="cinema__select-block">
+              <div id="new-click">
+                <input class="cinema__head-input cinema__head-input4" type="text" value="Сначала новые" disabled id="new">
+              </div>
+              <div class="cinema__argument cinema__argument4 cinema__argument--show" id="new-show">
+                <button class="cinema__argument-input cinema__argument-input--active" type="button" value="Сначала новые">Сначала новые</button>
+              </div>
+            </div>
             <button class="cinema__select-button">Сбросить</button>
-          </div>
+          </section>
         </form>
         <section class="cinema__lists"><a class="cinema__list" href="#"><img class="img-kub" src="img/film-1.jpg">
             <h3 class="name">Чёрная пантера</h3>

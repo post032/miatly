@@ -1,7 +1,7 @@
 .buttons__filtrs {
   display: flex;
   margin-left: 20px;
-  padding-bottom: 52px;
+  padding-bottom: 30px;
 }
 
 .buttons__filtrs button {
@@ -18,8 +18,7 @@
   line-height: 1.2;
   text-align: center;
   background-color: rgb(239, 239, 255);
-  min-width: 120px;
-  min-height: 40px;
+  padding: 10px 25px;
   border: none;
   border-radius: 20px;
   outline: none;
@@ -31,6 +30,7 @@
   background-color: rgb(64, 67, 206);
 }
 
+.mobile__close,
 .mobile__open {
   color: #666666;
   font-size: 13px;
@@ -40,6 +40,10 @@
   background: none;
   outline: none;
   cursor: pointer;
+}
+
+.mobile__hide {
+  display: none;
 }
 
 .header__buttons {
@@ -175,9 +179,9 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 50%;
+  top: 42%;
   left: 50%;
-  transform: translate(-50%);
+  transform: translateX(-50%);
   outline: none;
   cursor: pointer;
 }
@@ -265,7 +269,6 @@
     background-color: #9c9c9c;
   }
 
-
   .show-play__buttons {
     width: 490px;
   }
@@ -287,26 +290,12 @@
     top: 95%;
   }
 
-  .header__img--sport:focus .button__play-sport,
-  .header__img--sport:hover .button__play-sport {
-    font-size: 0;
-    background: none;
-  }
-
-  .header__img--sport:focus .button__play-sport::before,
-  .header__img--sport:hover .button__play-sport::before {
-    border: 40px solid transparent;
-    transition: 1s;
-    border-left: 65px solid #fff;
-    top: -230px;
-    position: absolute;
-  }
-
   .button__series {
     display: flex;
     justify-content: flex-start;
   }
 
+  .mobile__close,
   .mobile__open {
     display: none;
   }
@@ -321,11 +310,9 @@
     width: 109px;
     height: 50px;
   }
-
-  .button__pro {
-    min-width: 170px;
-  }
-
+  // .button__pro {
+  //   min-width: 170px;
+  // }
   .header__buttons {
     width: 490px;
   }
@@ -351,6 +338,7 @@
 
   .buttons__filtrs {
     flex-wrap: wrap;
+    padding-bottom: 39px;
   }
 
   .button__play {
@@ -376,5 +364,21 @@
 
   .header__buttons {
     top: 435px;
+  }
+
+  .header__img--sport:focus .button__play-sport,
+  .header__img--sport:hover .button__play-sport {
+    font-size: 0;
+    background: none;
+  }
+
+  .header__img--sport:focus .button__play-sport::before,
+  .header__img--sport:hover .button__play-sport::before {
+    border: 69px solid transparent;
+    transition: 1s;
+    border-left: 102px solid #fff;
+    top: -275px;
+    left: 25px;
+    position: absolute;
   }
 }

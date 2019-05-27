@@ -21,31 +21,47 @@ section.cinema.container
         button(type="button").button__pro американские
         button(type="button").button__pro новинки
     button(type="button").cinema__sort фильтр и сортировка
-    div.cinema__select.cinema__hide
-      select
-        option Все жанры
-        option Ужасы
-        option Фэнтази
-        option Приключения
-        option Драма
-        option Документальное 
-      select
-        option Все годы
-        option 2019
-        option 2018
-        option 2017
-        option 2016
-        option 2015
-        option 2014
-        option 2013
-      select
-        option Все страны
-        option Россия
-        option Англия
-        option Бельгия
-        option Япония
-      select
-        option Сначала новые
+    section.cinema__select.cinema__hide
+      div.cinema__select-block
+        div(id="style-click")
+          input(type="text" value="Все жанры" disabled id="style").cinema__head-input.cinema__head-input1
+        div(id="style-show").cinema__argument.cinema__argument1.cinema__argument--show
+          button(type="button" value="Все жанры").cinema__argument-input.cinema__argument-input--active Все жанры
+          button(type="button" value="Ужасы").cinema__argument-input Ужасы
+          button(type="button" value="Фэнтази").cinema__argument-input Фэнтази
+          button(type="button" value="Приключения").cinema__argument-input Приключения
+          button(type="button" value="Драма").cinema__argument-input Драма
+          button(type="button" value="Документальное").cinema__argument-input Документальное
+      div.cinema__select-block
+        div(id="year-click")
+          input(type="text" value="Все годы" disabled id="year").cinema__head-input.cinema__head-input2
+        div(id="year-show").cinema__argument.cinema__argument2.cinema__argument--show
+          button(type="button" value="Все годы" disabled).cinema__argument-input.cinema__argument-input--active Все годы
+          button(type="button" value="2019").cinema__argument-input 2019
+          button(type="button" value="2018").cinema__argument-input 2018
+          button(type="button" value="2017").cinema__argument-input 2017
+          button(type="button" value="2016").cinema__argument-input 2016
+          button(type="button" value="2015").cinema__argument-input 2015
+          button(type="button" value="2014").cinema__argument-input 2014
+          button(type="button" value="2013").cinema__argument-input 2013
+          button(type="button" value="2012").cinema__argument-input 2012
+          button(type="button" value="2011").cinema__argument-input 2011
+          button(type="button" value="2010").cinema__argument-input 2010
+          button(type="button" value="2009").cinema__argument-input 2009
+      div.cinema__select-block
+        div(id="country-click")
+          input(type="text" value="Все страны" disabled id="country").cinema__head-input.cinema__head-input3
+        div(id="country-show").cinema__argument.cinema__argument3.cinema__argument--show
+          button(type="button" value="Все страны").cinema__argument-input.cinema__argument-input--active Все страны
+          button(type="button" value="Россия").cinema__argument-input Россия
+          button(type="button" value="Англия").cinema__argument-input Англия
+          button(type="button" value="Бельгия").cinema__argument-input Бельгия
+          button(type="button" value="Япония").cinema__argument-input Япония
+      div.cinema__select-block
+        div(id="new-click")
+          input(type="text" value="Сначала новые" disabled id="new").cinema__head-input.cinema__head-input4
+        div(id="new-show").cinema__argument.cinema__argument4.cinema__argument--show
+          button(type="button" value="Сначала новые").cinema__argument-input.cinema__argument-input--active Сначала новые
       button.cinema__select-button Сбросить
   section.cinema__lists
     a(href="#").cinema__list

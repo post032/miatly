@@ -29,6 +29,7 @@
   margin-bottom: 30px;
 }
 
+
 .popular .title__name {
   margin-top: 20px;
 }
@@ -247,7 +248,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .bookmark__lists,
@@ -264,9 +265,15 @@
   align-items: center;
   border-top: 1px solid rgb(241, 241, 241);
   border-bottom: 1px solid rgb(241, 241, 241);
-  margin-top: 40px;
+  margin-top: 38px;
   margin-bottom: 50px;
   position: relative;
+  height: 120px;
+}
+
+.bookmark__list {
+  margin-top: 19px;
+  margin-bottom: 6px;
 }
 
 .bookmark__list a {
@@ -306,6 +313,8 @@
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 16px;
 }
 
 .no-mobile__text,
@@ -316,7 +325,11 @@
 .bookmark__icon1,
 .bookmark__icon2 {
   position: relative;
-  margin-left: 40px;
+  padding-left: 40px;
+  font-size: 12px;
+  font-weight: normal;
+  color: rgb(102, 102, 102);
+  text-transform: uppercase;
 }
 
 .bookmark__icon1::before,
@@ -327,8 +340,8 @@
   height: 24px;
   display: flex;
   position: absolute;
-  top: 0;
-  left: -35px;
+  top: -4px;
+  left: 3px;
 }
 
 .bookmark__icon1::before {
@@ -398,14 +411,18 @@
     display: flex;
   }
 
+  .rating__list a span {
+    font-size: 16px;
+  }
+
   .header__block {
     align-items: flex-start;
   }
 
   .all__link {
     font-size: 16px;
-    top: 68px;
-    right: 200px;
+    top: 76px;
+    right: 163px;
     bottom: 0;
   }
 
@@ -456,11 +473,13 @@
   .bookmark__lists {
     flex-direction: row;
     justify-content: flex-start;
+    height: 70px;
   }
 
   .bookmark__list {
-    margin-right: 40px;
-  }
+    margin-right: 30px;
+    margin-top: 7px;
+}
 
   .underline {
     width: 110px;
@@ -483,8 +502,23 @@
   .sport .circle__lists {
     margin-bottom: 70px;
   }
+
+  .bookmark__icon1,
+  .bookmark__icon2 {
+    margin-top: 0;
+  }
+
+
 }
 @media (min-width: @size-desktop) {
+  .title__inside h1 {
+    margin-top: 18px;
+  }
+  .title__name-serial{
+  margin-bottom: 35px!important;
+  }
+
+
   .kub__list .category,
   .kub__list .name {
     text-align: center;
@@ -514,11 +548,16 @@
   .header__block {
     margin-left: 0;
     margin-right: 0;
+    margin-top: 8px;
   }
 
   .bookmark__lists,
   .rating__lists {
     margin-left: 0;
+  }
+
+  .bookmark__lists {
+    margin-top: 29px;
   }
 
   .nomobile {

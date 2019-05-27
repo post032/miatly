@@ -5,6 +5,11 @@
 
 .sport-page__blocks {
   margin-top: 20px;
+  margin-left: 9px;
+}
+
+.sport-page__sezon {
+  margin-top: 0;
 }
 
 .sport-img__min {
@@ -17,6 +22,15 @@
 
 .sport__element .name {
   margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.sport__element {
+  margin-left: 7px;
+}
+
+.sport-page__block .header-block {
+  margin-top: 30px;
 }
 
 
@@ -33,6 +47,7 @@
   .sport-page__element {
     width: 270px;
     margin-top: 50px;
+    margin-bottom: -10px;
   }
 
   .sport-img__min {
@@ -41,6 +56,10 @@
   }
 }
 @media (min-width: @size-desktop) {
+  .sport-page__blocks,
+  .sport__element {
+    margin-left: 0px;
+  }
   .sport-page__block-list {
     display: flex;
     flex-direction: column;
@@ -48,11 +67,23 @@
     padding: 0;
     max-width: 1400px;
     padding-bottom: 76px;
-    margin-top: 90px;
+    margin-top: 93px;
+  }
+
+  .sport-page__block-list .title__name {
+    margin-bottom: 16px;
   }
   .sport-page__blocks {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+
+  .sport-page__block {
+    padding-top: 30px;
+  }
+
+  .sport-page__slider .slick-list {
+    padding-bottom: 20px;
   }
 }
