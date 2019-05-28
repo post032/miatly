@@ -207,6 +207,7 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 .menu__range {
+  display: none;
   -webkit-appearance: none;
   outline: none;
   position: relative;

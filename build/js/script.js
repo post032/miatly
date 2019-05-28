@@ -29,6 +29,7 @@ $('.banner__limit').slick({
 
   speed: 300,
   centerMode: true,
+  infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   responsive: [
@@ -36,6 +37,7 @@ $('.banner__limit').slick({
       breakpoint: 768,
       settings: {
         slidesToShow: 1,
+        infinite: true,
         centerMode: false,
         slidesToScroll: 1,
       }
@@ -50,6 +52,7 @@ $(window).on('load resize', function() {
   if ($(window).width() >= 768) {
     $('.talkshow__slider:not(.slick-initialized)').slick({
       speed: 300,
+      infinite: true,
       slidesToShow: 4,
     });
   } else {
@@ -113,6 +116,7 @@ $('.circle__lists').slick({
       settings: {
         slidesToShow: 4,
         slidesToScroll: 4,
+        infinite: true,
         centerMode: false,
       }
     }
@@ -133,6 +137,7 @@ $('.kub__lists').slick({
       breakpoint: 1400,
       settings: {
         slidesToShow: 6,
+        infinite: true,
         slidesToScroll: 6,
         centerMode: true,
       }
@@ -141,6 +146,7 @@ $('.kub__lists').slick({
       breakpoint: 1200,
       settings: {
         slidesToShow: 5,
+        infinite: true,
         slidesToScroll: 5,
         centerMode: true,
       }
@@ -149,6 +155,7 @@ $('.kub__lists').slick({
       breakpoint: 1024,
       settings: {
         slidesToShow: 4,
+        infinite: true,
         slidesToScroll: 4,
         centerMode: true,
       }
@@ -157,6 +164,7 @@ $('.kub__lists').slick({
       breakpoint: 600,
       settings: {
         slidesToShow: 3,
+        infinite: true,
         slidesToScroll: 3,
         centerMode: true,
       }
@@ -165,6 +173,7 @@ $('.kub__lists').slick({
       breakpoint: 500,
       settings: {
         slidesToShow: 3,
+        infinite: true,
         slidesToScroll: 3,
         centerMode: false,
       }
