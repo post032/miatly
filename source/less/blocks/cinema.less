@@ -158,9 +158,9 @@
 
   .cinema__list:focus .img-kub,
   .cinema__list:hover .img-kub {
-    width: 155px;
-    height: 225px;
-    box-sizing: border-box;
+    transform: scale(1.1);
+    margin-top: -2px;
+    margin-bottom: 10px;
   }
 }
 
@@ -168,12 +168,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-}
-
-.cinema__argument {
-  display: flex;
-  flex-direction: column;
-  overflow-y: scroll;
 }
 
 .cinema__argument--show {
@@ -238,6 +232,46 @@
   font-weight: 500;
   color: #3538cb;
 }
+
+.cinema__argument {
+  flex-direction: column;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.cinema__argument--close {
+  display: flex;
+}
+//////////////////////////////////scroll/////////////////
+.cinema__argument::-webkit-scrollbar-button {
+background-repeat:no-repeat;
+width: 5px;
+height: 0px
+}
+
+.cinema__argument::-webkit-scrollbar-track {
+background-color: #f1f1f1
+}
+
+.cinema__argument::-webkit-scrollbar-thumb {
+-webkit-border-radius: 0px;
+border-radius: 0px;
+background-color:#000000;
+}
+
+// ::-webkit-scrollbar-thumb:hover{
+// background-color:#56999f;
+// }
+
+.cinema__argument::-webkit-resizer{
+width:4px;
+height:0px
+}
+
+.cinema__argument::-webkit-scrollbar{
+width: 4px;
+}
+
 @media (min-width: @size-tablet) {
 
   .cinema__sort {
@@ -269,13 +303,6 @@
   .cinema__list .img-kub {
     width: 170px;
     height: 250px;
-  }
-
-  .cinema__list:focus .img-kub,
-  .cinema__list:hover .img-kub {
-    width: 175px;
-    height: 255px;
-    box-sizing: border-box;
   }
 
   .cinema__list1 {

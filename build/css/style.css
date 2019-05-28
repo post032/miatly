@@ -148,41 +148,6 @@ input[type="radio"].visually-hidden {
   margin-right: 20px;
   margin-top: 10px;
 }
-.menu__range {
-  display: none;
-  -webkit-appearance: none;
-  outline: none;
-  position: relative;
-  float: right;
-  width: 60px;
-  height: 30px;
-  border-radius: 20px;
-  overflow: hidden;
-}
-.menu__range-day {
-  background: #dbdbdb;
-}
-.menu__range-night {
-  background: #3538cb;
-}
-.menu__range::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background-repeat: no-repeat;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-.menu__range-day::-webkit-slider-thumb {
-  background-color: #ffffff;
-  background-image: url("../img/moon.png");
-  background-position: 7px 7px;
-}
-.menu__range-night::-webkit-slider-thumb {
-  background-color: #000000;
-  background-image: url("../img/moon-night.png");
-  background-position: 4px 4px;
-}
 .menu__input-search {
   display: none;
 }
@@ -240,6 +205,40 @@ input[type="radio"].visually-hidden {
   border-radius: 20px;
   outline: none;
   cursor: pointer;
+}
+.menu__range {
+  -webkit-appearance: none;
+  outline: none;
+  position: relative;
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+  background: #dbdbdb;
+}
+.menu__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+  background-color: #ffffff;
+  background-image: url("../img/moon.png");
+  background-repeat: no-repeat;
+  background-position: 7px 7px;
+}
+.menu__range--night {
+  background-color: #3538cb;
+}
+.menu__range--night::-webkit-slider-thumb {
+  background: #000000;
+  background-image: url("../img/moon-night.png");
+  background-repeat: no-repeat;
+  background-position: 4px 4px;
 }
 @media (min-width: 768px) {
   .menu__range {
@@ -435,7 +434,7 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: 768px) {
   .nav__hover {
-    left: 350px;
+    left: 25px;
     width: 730px;
   }
 }
@@ -450,6 +449,9 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1170px) {
   .nav__lists li {
     margin-right: 50px;
+  }
+  .nav__hover {
+    left: 350px;
   }
 }
 .banner {
@@ -1428,8 +1430,10 @@ input[type="radio"].visually-hidden {
   }
   .kub__list:focus .img-kub,
   .kub__list:hover .img-kub {
-    width: 180px;
-    height: 264px;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    margin-top: -2px;
+    margin-bottom: 20px;
   }
   .kub__list:focus::before,
   .kub__list:hover::before {
@@ -2000,10 +2004,10 @@ input[type="radio"].visually-hidden {
   }
   .cinema__list:focus .img-kub,
   .cinema__list:hover .img-kub {
-    width: 155px;
-    height: 225px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    margin-top: -2px;
+    margin-bottom: 10px;
   }
 }
 .cinema__select-block {
@@ -2015,16 +2019,6 @@ input[type="radio"].visually-hidden {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-}
-.cinema__argument {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  overflow-y: scroll;
 }
 .cinema__argument--show {
   display: none;
@@ -2079,6 +2073,38 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   color: #3538cb;
 }
+.cinema__argument {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.cinema__argument--close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.cinema__argument::-webkit-scrollbar-button {
+  background-repeat: no-repeat;
+  width: 5px;
+  height: 0px;
+}
+.cinema__argument::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+.cinema__argument::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background-color: #000000;
+}
+.cinema__argument::-webkit-resizer {
+  width: 4px;
+  height: 0px;
+}
+.cinema__argument::-webkit-scrollbar {
+  width: 4px;
+}
 @media (min-width: 768px) {
   .cinema__sort {
     display: none;
@@ -2117,13 +2143,6 @@ input[type="radio"].visually-hidden {
   .cinema__list .img-kub {
     width: 170px;
     height: 250px;
-  }
-  .cinema__list:focus .img-kub,
-  .cinema__list:hover .img-kub {
-    width: 175px;
-    height: 255px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
   }
   .cinema__list1 {
     height: 169px;
@@ -3795,8 +3814,8 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: -37px -61px;
   position: absolute;
-  top: -14px;
-  right: -10px;
+  top: -31px;
+  right: -20px;
 }
 #remind .lk__lists .lk__list:hover .name,
 #remind .lk__lists .lk__list:focus .name {
@@ -3814,16 +3833,8 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: -57px -6px;
   position: absolute;
-  top: -14px;
-  right: -10px;
-}
-#viewed .lk__lists .lk__list:hover .img-lk,
-#viewed .lk__lists .lk__list:focus .img-lk {
-  -webkit-transition: 1s;
-  transition: 1s;
-  width: 180px;
-  height: 264px;
-  position: relative;
+  top: -31px;
+  right: -12px;
 }
 #viewed .lk__lists .lk__list:hover .name,
 #viewed .lk__lists .lk__list:focus .name {
@@ -3839,8 +3850,8 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: -10px -10px;
   position: absolute;
-  top: -14px;
-  right: 10px;
+  top: -28px;
+  right: 20px;
 }
 .lk__enter {
   display: none;
@@ -4005,14 +4016,20 @@ input[type="radio"].visually-hidden {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-left: 0;
+    margin-left: 20px;
   }
   #bookmark .lk__lists .lk__list:hover .img-lk,
   #bookmark .lk__lists .lk__list:focus .img-lk {
-    -webkit-transition: 1s;
-    transition: 1s;
-    width: 180px;
-    height: 264px;
-    position: relative;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    margin-top: -10px;
+    margin-bottom: 9px;
+  }
+  #viewed .lk__lists .lk__list:hover .img-lk,
+  #viewed .lk__lists .lk__list:focus .img-lk {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    margin-top: -10px;
+    margin-bottom: 9px;
   }
 }

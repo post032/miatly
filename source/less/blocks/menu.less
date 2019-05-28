@@ -23,45 +23,6 @@
   margin-top: 10px;
 }
 
-.menu__range {
-  display: none;
-  -webkit-appearance: none;
-  outline: none;
-  position: relative;
-  float: right;
-  width: 60px;
-  height: 30px;
-  border-radius: 20px;
-  overflow: hidden;
-}
-  .menu__range-day {
-    background: #dbdbdb;
-  }
-
-  .menu__range-night {
-    background: #3538cb;
-  }
-
-  .menu__range::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    background-repeat: no-repeat;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-
-  .menu__range-day::-webkit-slider-thumb {
-    background-color: #ffffff;
-    background-image: url("../img/moon.png");
-    background-position: 7px 7px;
-  }
-
-  .menu__range-night::-webkit-slider-thumb {
-    background-color: #000000;
-    background-image: url("../img/moon-night.png");
-    background-position: 4px 4px;
-  }
 
   .menu__input-search {
     display: none;
@@ -125,6 +86,47 @@
     outline: none;
     cursor: pointer;
   }
+
+
+////////////////////////////////////////
+.menu {
+    &__range {
+        -webkit-appearance: none;
+        outline: none;
+        position: relative;
+        width: 60px;
+        height: 30px;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: background .2s ease;
+        background: #dbdbdb;
+
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background .2s ease;
+            background-color: #ffffff;
+            background-image: url("../img/moon.png");
+            background-repeat: no-repeat;
+            background-position: 7px 7px;
+        }
+
+        &--night {
+          background-color: #3538cb;
+
+            &::-webkit-slider-thumb {
+                background: #000000;
+                background-image: url("../img/moon-night.png");
+                background-repeat: no-repeat;
+                background-position: 4px 4px;
+            }
+        }
+    }
+}
   @media (min-width: @size-tablet) {
     .menu__range {
       display: flex;
@@ -136,8 +138,6 @@
       order: 3;
       margin-right: 0;
     }
-
-
 
     .menu__wrapper {
       margin-left: 0;
