@@ -1405,6 +1405,7 @@ input[type="radio"].visually-hidden {
   .kub__lists .slick-slide {
     width: 180px!important;
     margin-left: 30px;
+    margin-top: 23px;
   }
   .header__block {
     margin-left: 0;
@@ -1446,8 +1447,9 @@ input[type="radio"].visually-hidden {
     background-position: -50px 10px;
     background-repeat: no-repeat;
     position: absolute;
-    top: -20px;
-    right: 40px;
+    z-index: 10;
+    top: -43px;
+    right: 5px;
   }
   .kub__list:focus .name,
   .kub__list:hover .name {
